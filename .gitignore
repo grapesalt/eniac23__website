@@ -9,4 +9,4 @@ node_modules
 .netlify
 
 # generated css
-./app/styles/app.generated.css
+/app/styles/app.generated.css
