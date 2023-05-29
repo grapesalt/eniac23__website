@@ -6,7 +6,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import stylesheet from "./styles/app.css";
+import stylesheet from "./styles/app.generated.css";
 
 export const meta = () => [
   {
