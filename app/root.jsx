@@ -6,14 +6,17 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import stylesheet from "./styles/app.css";
 
 export const meta = () => [
   {
     charset: "utf-8",
-    title: "New Remix App",
+    title: "VIRUS 2023 | Eniac",
     viewport: "width=device-width,initial-scale=1",
   },
 ];
+
+export const links = () => [{ rel: "stylesheet", href: stylesheet }];
 
 export default function App() {
   return (

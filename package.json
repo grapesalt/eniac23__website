@@ -2,9 +2,11 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
-    "build": "remix build",
+    "build": "npm run build:css && remix build",
+    "build:css": "tailwindcss -m -i ./styles/app.css -o app/styles/app.css",
+    "dev": "concurrently \"npm run dev:css\" \"remix dev\"",
+    "dev:css": "tailwindcss -w -i ./styles/app.css -o app/styles/app.css",
     "predev": "rimraf ./.netlify/edge-functions/",
-    "dev": "remix dev",
     "start": "netlify serve",
     "typecheck": "tsc -b",
     "deploy": "npm run build && netlify deploy",
@@ -25,8 +27,12 @@
     "@remix-run/serve": "^1.16.1",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.8",
+    "autoprefixer": "^10.4.14",
+    "concurrently": "^8.0.1",
     "eslint": "^8.27.0",
+    "postcss": "^8.4.24",
     "rimraf": "^4.1.4",
+    "tailwindcss": "^3.3.2",
     "typescript": "^4.8.4"
   },
   "engines": {
