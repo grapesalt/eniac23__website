@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+  background-color: #1e1e1e;
+  font-family: "Jet Brains Mono", monospace;
+  color: #ffffff;
+}
+
+.gugi {
+  font-family: "Gugi", cursive;
+}
+
+.element-hidden {
+  display: none !important;
+}
+
+.nav-shadow {
+  box-shadow: 0 12px 30px #ababab;
+}
+
+@media screen and (min-width: 768px) {
+  .element-hidden {
+    display: block !important;
+  }
+
+  .nav-shadow {
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .height-mobile {
+    height: calc(100vh - 40px);
+  }
+}

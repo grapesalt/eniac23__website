@@ -1,9 +1,9 @@
-export const meta = () => {
-  return [
-    { title: "Eniac Club" },
-    { name: "description", content: "Welcome to Remix!" },
-  ];
-};
+// export const meta = () => {
+//   return [
+//     { title: "hello" },
+//     { name: "description", content: "Welcome to Remix!" },
+//   ];
+// };
 
 export default function Index() {
   return (
