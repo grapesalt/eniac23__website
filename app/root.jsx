@@ -31,7 +31,7 @@ export default function App() {
         />
       </head>
       <body>
-        <div className="flex flex-col h-screen">
+        <div className="flex flex-col h-[100svh]">
           <div className="content-window md:my-auto flex md:flex-col flex-col">
             <div className="mx-auto overflow-y-hidden md:border-[4px] border-[#b9b9b9] md:rounded-2xl md:h-[75vh] height-mobile md:w-[90vw] w-screen md:bg-[#320C50] bg-[#0a0524] max-w-[1100px]">
               <Outlet />

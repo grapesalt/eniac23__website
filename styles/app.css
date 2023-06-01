@@ -33,6 +33,6 @@ body {
 
 @media screen and (max-width: 768px) {
   .height-mobile {
-    height: calc(100vh - 40px);
+    height: calc(100svh - 40px);
   }
 }
