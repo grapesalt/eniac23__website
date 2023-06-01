@@ -5,7 +5,7 @@
 html,
 body {
   background-color: #1e1e1e;
-  font-family: "Jet Brains Mono", monospace;
+  font-family: "JetBrains Mono", monospace;
   color: #ffffff;
 }
 
@@ -21,6 +21,39 @@ body {
   box-shadow: 0 12px 30px #ababab;
 }
 
+.text-secondary {
+  color: #b9b9b9;
+}
+
+.hr-lines {
+  position: relative;
+  /* max-width: 500px; */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hr-lines:before {
+  content: " ";
+  height: 2px;
+  width: 13.65vw;
+  background: #b9b9b9;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: -13.65vw;
+}
+
+.hr-lines:after {
+  content: " ";
+  height: 2px;
+  width: 13.65vw;
+  background: #b9b9b9;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: -13.65vw;
+}
+
 @media screen and (min-width: 768px) {
   .element-hidden {
     display: block !important;
@@ -34,5 +67,10 @@ body {
 @media screen and (max-width: 768px) {
   .height-mobile {
     height: calc(100svh - 40px);
+  }
+
+  .hr-lines:after,
+  .hr-lines:before {
+    display: none;
   }
 }
