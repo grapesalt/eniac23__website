@@ -1,4 +1,5 @@
 import {
+  Link,
   Links,
   LiveReload,
   Meta,
@@ -33,16 +34,18 @@ export default function App() {
       <body>
         <div className="flex flex-col h-[100svh]">
           <div className="content-window md:my-auto flex md:flex-col flex-col">
-            <div className="mx-auto overflow-x-hidden overflow-y-auto md:border-[4px] border-[#b9b9b9] md:rounded-2xl md:h-[75vh] height-mobile md:w-[90vw] w-screen md:bg-[#320C50] bg-[#0a0524] max-w-[1100px]">
+            <div className="content-window mx-auto overflow-x-hidden overflow-y-auto md:border-[4px] border-[#b9b9b9] md:rounded-2xl md:h-[75vh] height-mobile md:w-[90vw] w-screen md:bg-[#320C50] bg-[#0a0524] max-w-[1100px]">
               <Outlet />
             </div>
-            <div className="mx-auto md:mt-4 md:border-[4px] border-[#b9b9b9] md:rounded-xl md:h-[7vh] h-[40px] md:w-[90vw] w-screen md:shadow-none  nav-shadow md:bg-[#320C50] bg-[#1e072f] max-w-[1100px] z-[1000]">
+            <div className="md:flex md:flex-col mx-auto md:mt-4 md:border-[4px] border-[#b9b9b9] md:rounded-xl md:h-[7vh] h-[40px] md:w-[90vw] w-screen md:shadow-none  nav-shadow md:bg-[#320C50] bg-[#1e072f] max-w-[1100px] z-[1000]">
               <Navbar />
             </div>
           </div>
-          <h1 className="text-[sm] gugi tracking-[0.5em] md:absolute md:bottom-4 text-center w-screen element-hidden md:not-hidden">
-            ENIAC
-          </h1>
+          <Link to={"/"}>
+            <h1 className="text-[sm] gugi tracking-[0.5em] md:absolute md:bottom-4 text-center w-screen element-hidden md:not-hidden">
+              ENIAC
+            </h1>
+          </Link>
         </div>
         <ScrollRestoration />
         <Scripts />
