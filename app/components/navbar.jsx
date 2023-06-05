@@ -5,9 +5,9 @@ const Navbar = () => {
   return (
     <>
       <div className="nav justify-evenly my-auto h-full">
-        <NavItem name={"About Us"} to={"/about-us#about"} />
-        <NavItem name={"Team"} to={"/about-us#team"} />
-        <NavItem name={"Sponsors"} to={"/about-us#sponsors"} />
+        <NavItem name={"About Us"} to={"/about-us"} />
+        {/* <NavItem name={"Team"} to={"/about-us#team"} />
+        <NavItem name={"Sponsors"} to={"/about-us#sponsors"} /> */}
         <NavItem name={"Events"} to={"/events"} />
         <NavItem name={"Reach Out"} to={"/contact"} />
       </div>
