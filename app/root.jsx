@@ -41,7 +41,7 @@ export default function App() {
               <Navbar />
             </div>
           </div>
-          <Link to={"/"}>
+          <Link to={"/"} prefetch="intent">
             <h1 className="text-[sm] gugi tracking-[0.5em] md:absolute md:bottom-4 text-center w-screen element-hidden md:not-hidden">
               ENIAC
             </h1>
