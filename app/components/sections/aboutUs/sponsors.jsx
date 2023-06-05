@@ -1,12 +1,12 @@
 import React from "react";
 import PageHeading from "../../pageHeading";
-import AboutSectionsLayout from "../../aboutSectionsLayout";
+import Layout from "../../aboutSectionsLayout";
 
-const Team = () => {
+const Sponsors = () => {
   return (
     <>
-      <PageHeading title={"Our Team"} eid={"team"} />
-      <AboutSectionsLayout>
+      <PageHeading title={"Our Sponsors"} eid={"sponsors"} />
+      <Layout>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum
           justo sed orci luctus efficitur. Etiam sed lectus eget eros luctus
@@ -31,9 +31,17 @@ const Team = () => {
           dapibus lorem vel suscipit tempor. Sed sodales volutpat erat, eu
           fermentum eros mollis mattis. Nunc dignissim eu mauris a tristique.
         </p>
-      </AboutSectionsLayout>
+        <p>
+          Maecenas lobortis ut est in semper. Quisque laoreet velit et magna
+          iaculis commodo. Cras molestie tempus accumsan. Etiam pretium pretium
+          euismod. Ut ultricies euismod sapien, nec rutrum mi porttitor quis.
+          Vivamus aliquet enim ligula, eget viverra ipsum venenatis in. Vivamus
+          dapibus lorem vel suscipit tempor. Sed sodales volutpat erat, eu
+          fermentum eros mollis mattis. Nunc dignissim eu mauris a tristique.
+        </p>
+      </Layout>
     </>
   );
 };
 
-export default Team;
+export default Sponsors;

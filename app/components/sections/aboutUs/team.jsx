@@ -1,15 +1,12 @@
 import React from "react";
 import PageHeading from "../../pageHeading";
-import AboutSectionsLayout from "../../aboutSectionsLayout";
+import Layout from "../../aboutSectionsLayout";
 
-const About = () => {
+const Team = () => {
   return (
     <>
-      <PageHeading title={"About Us"} eid={"about"} />
-      <AboutSectionsLayout>
-        <p className="text-center text-6xl md:text-7xl font-extrabold gradient-heading lg:tracking-[20px]">
-          WE INNOVATE
-        </p>
+      <PageHeading title={"Our Team"} eid={"team"} />
+      <Layout>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum
           justo sed orci luctus efficitur. Etiam sed lectus eget eros luctus
@@ -34,9 +31,9 @@ const About = () => {
           dapibus lorem vel suscipit tempor. Sed sodales volutpat erat, eu
           fermentum eros mollis mattis. Nunc dignissim eu mauris a tristique.
         </p>
-      </AboutSectionsLayout>
+      </Layout>
     </>
   );
 };
 
-export default About;
+export default Team;
