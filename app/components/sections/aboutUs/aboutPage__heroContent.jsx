@@ -46,7 +46,7 @@ const Heading = ({ text, onClick }) => {
   return (
     <h3
       onClick={onClick}
-      className="transition hover:cursor-pointer text-6xl md:text-7xl lg:text-8xl text-[#b9b9b9] font-semibold md:font-bold text-center md:text-left tracking-tight md:tracking-normal"
+      className="transition hover:cursor-pointer text-4xl md:text-7xl lg:text-8xl text-[#b9b9b9] font-semibold md:font-bold text-center md:text-left tracking-tight md:tracking-normal"
     >
       {text}
     </h3>
