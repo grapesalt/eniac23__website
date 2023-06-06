@@ -1,6 +1,6 @@
 import React from "react";
 
-const Sponsors = ({ extRef }) => {
+const EniacClub = ({ extRef }) => {
   return (
     <div ref={extRef}>
       <p>
@@ -39,4 +39,4 @@ const Sponsors = ({ extRef }) => {
   );
 };
 
-export default Sponsors;
+export default EniacClub;

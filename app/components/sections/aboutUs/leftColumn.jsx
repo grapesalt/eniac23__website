@@ -2,10 +2,12 @@ import React from "react";
 
 const LeftColumn = ({ title }) => {
   return (
-    <div className="w-full md:w-[11%] h-[10.5%] md:h-full flex bg-[#320c50]">
-      <p className="uppercase text-4xl md:text-[90px] mx-auto my-auto font-medium align-middle text-center md:whitespace-nowrap md:-rotate-90 lg:ml-[-155px] md:ml-[-168px]">
-        {title || "About Us"}
-      </p>
+    <div className="w-full md:w-[11%] h-[10.5%] md:h-full bg-[#320c50]">
+      <div className="h-full flex">
+        <p className="uppercase text-4xl md:text-[72px] lg:text-[86px] font-medium whitespace-nowrap m-auto md:mt-auto md:mb-[20px] md:-rotate-90 md:max-w-[40px] md:ml-[30px] ">
+          {title || "About Us"}
+        </p>
+      </div>
     </div>
   );
 };
