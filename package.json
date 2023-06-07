@@ -18,8 +18,10 @@
     "@netlify/remix-edge-adapter": "1.2.0",
     "@remix-run/react": "^1.16.1",
     "cross-env": "^7.0.3",
+    "hamburger-react": "^2.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-modern-drawer": "^1.2.0",
     "remix-utils": "^6.3.0"
   },
   "devDependencies": {

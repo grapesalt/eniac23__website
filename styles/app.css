@@ -62,7 +62,7 @@ body {
   clear: both;
 }
 
-.nav {
+.desktop-nav {
   display: flex;
 }
 
@@ -95,6 +95,10 @@ a.active.l-nav-item.ntext {
   scroll-behavior: smooth;
 }
 
+.hamburger-react {
+  align-self: center;
+}
+
 @media screen and (min-width: 768px) {
   .element-hidden {
     display: block !important;
@@ -107,7 +111,7 @@ a.active.l-nav-item.ntext {
 
 @media screen and (max-width: 768px) {
   .height-mobile {
-    height: calc(100svh - 40px);
+    height: calc(100svh - 68px);
   }
 
   /* .hr-lines:after,
@@ -115,7 +119,7 @@ a.active.l-nav-item.ntext {
     display: none;
   } */
 
-  .nav {
+  .desktop-nav {
     display: none;
   }
 }

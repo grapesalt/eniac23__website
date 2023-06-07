@@ -9,8 +9,12 @@ import {
 } from "@remix-run/react";
 import stylesheet from "./styles/app.generated.css";
 import Navbar from "./components/navbar";
+import navStyles from "react-modern-drawer/dist/index.css";
 
-export const links = () => [{ rel: "stylesheet", href: stylesheet }];
+export const links = () => [
+  { rel: "stylesheet", href: stylesheet },
+  { rel: "stylesheet", href: navStyles },
+];
 
 export default function App() {
   return (
@@ -37,7 +41,7 @@ export default function App() {
             <div className="content-window mx-auto overflow-x-hidden overflow-y-auto md:border-[4px] border-[#b9b9b9] md:rounded-2xl md:h-[75vh] height-mobile md:w-[90vw] w-screen md:bg-[#320C50] bg-[#0a0524] max-w-[1100px]">
               <Outlet />
             </div>
-            <div className="md:flex md:flex-col mx-auto md:mt-4 md:border-[4px] border-[#b9b9b9] md:rounded-xl md:h-[7vh] h-[40px] md:w-[90vw] w-screen md:shadow-none  nav-shadow md:bg-[#320C50] bg-[#1e072f] max-w-[1100px] z-[1000]">
+            <div className="md:flex md:flex-col mx-auto md:mt-4 md:border-[4px] border-[#b9b9b9] md:rounded-xl md:h-[7vh] h-[68px] md:w-[90vw] w-screen md:shadow-none  nav-shadow md:bg-[#320C50] bg-[#1e072f] max-w-[1100px] z-[1000]">
               <Navbar />
             </div>
           </div>
