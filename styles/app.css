@@ -35,23 +35,23 @@ body {
 .hr-lines:before {
   content: " ";
   height: 2px;
-  width: 13.65vw;
+  width: 100%;
   background: #b9b9b9;
   display: block;
   position: absolute;
   top: 50%;
-  left: -13.65vw;
+  left: -100%;
 }
 
 .hr-lines:after {
   content: " ";
   height: 2px;
-  width: 13.65vw;
+  width: 100%;
   background: #b9b9b9;
   display: block;
   position: absolute;
   top: 50%;
-  right: -13.65vw;
+  right: -100%;
 }
 
 .esticky:after {
@@ -110,10 +110,10 @@ a.active.l-nav-item.ntext {
     height: calc(100svh - 40px);
   }
 
-  .hr-lines:after,
+  /* .hr-lines:after,
   .hr-lines:before {
     display: none;
-  }
+  } */
 
   .nav {
     display: none;
