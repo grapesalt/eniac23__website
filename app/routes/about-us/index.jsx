@@ -31,7 +31,7 @@ const AboutUs = () => {
     } else if (eniacVisible) {
       setHeading("Eniac Club");
     } else if (virusVisible) {
-      setHeading("Virus");
+      setHeading("Virus 2023");
     } else {
       setHeading("About Us");
     }
