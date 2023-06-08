@@ -10,22 +10,15 @@ export default function HomeHero() {
         className="h-[80svh]"
         style={{ backgroundImage: `url(${dottedPattern})` }}
       >
-        <div
-          style={{
-            backgroundImage: `url(${vr})`,
-            backgroundSize: "contain",
-            backgroundPosition: "25%",
-          }}
-          className="h-[80svh] top-0 w-full z-20 mx-auto absolute fade-bg-bottom bg-no-repeat"
-        ></div>
+        <div className="h-[60svh] mt-[20svh] top-0 w-full z-20 mx-auto absolute fade-bg-bottom bg-no-repeat"></div>
         <div className="max-w-[918px] mx-auto">
           <div
             style={{
               backgroundImage: `url(${vr})`,
               backgroundSize: "contain",
-              backgroundPosition: "25%",
+              backgroundPosition: "10%",
             }}
-            className="h-[68svh] top-0 mt-[12svh] w-full max-w-[918px] mx-auto absolute bg-no-repeat"
+            className="h-[65svh] top-0 mt-[15svh] w-full max-w-[918px] mx-auto absolute bg-no-repeat"
           ></div>
 
           <div className="main-heading text-center mt-[35svh] w-[100%]">
