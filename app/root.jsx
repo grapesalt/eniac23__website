@@ -31,25 +31,14 @@ export default function App() {
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Gugi&family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400..900&family=Gugi&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
           rel="stylesheet"
         />
       </head>
       <body>
-        <div className="flex flex-col h-[100svh]">
-          <div className="content-window md:my-auto flex md:flex-col flex-col">
-            <div className="content-window mx-auto overflow-x-hidden overflow-y-auto md:border-[4px] border-[#b9b9b9] md:rounded-2xl md:h-[75vh] height-mobile md:w-[90vw] w-screen md:bg-[#320C50] bg-[#0a0524] max-w-[1100px]">
-              <Outlet />
-            </div>
-            <div className="md:flex md:flex-col mx-auto md:mt-4 md:border-[4px] border-[#b9b9b9] md:rounded-xl md:h-[7vh] h-[68px] md:w-[90vw] w-screen md:shadow-none  nav-shadow md:bg-[#320C50] bg-[#1e072f] max-w-[1100px] z-[1000]">
-              <Navbar />
-            </div>
-          </div>
-          <Link to={"/"} prefetch="intent">
-            <h1 className="text-[sm] gugi tracking-[0.5em] md:absolute md:bottom-4 text-center w-screen element-hidden md:not-hidden">
-              ENIAC
-            </h1>
-          </Link>
+        <Navbar />
+        <div className="flex flex-col md:h-[100svh] h-[calc(100svh-50px)]">
+          <Outlet />
         </div>
         <ScrollRestoration />
         <Scripts />

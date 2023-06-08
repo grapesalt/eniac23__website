@@ -4,13 +4,89 @@
 
 html,
 body {
-  background-color: #1e1e1e;
-  font-family: "JetBrains Mono", monospace;
+  background-color: #080808;
+  font-family: "IBM Plex Mono", monospace;
   color: #ffffff;
 }
 
 .gugi {
   font-family: "Gugi", cursive;
+}
+
+.serif {
+  font-family: "IBM Plex Serif", serif;
+}
+
+.desktop-navbar {
+  background: linear-gradient(
+    135deg,
+    rgba(206, 206, 206, 0.126) 10%,
+    rgba(209, 209, 209, 0.102) 90%
+  );
+  opacity: 1;
+  backdrop-filter: blur(4px);
+}
+
+.nav-item-shadow {
+  text-shadow: 1px 1px 10px #ffffff;
+}
+
+.hero-text {
+  font-family: "Bodoni Moda", serif;
+  font-weight: 515;
+  font-variation-settings: "opsz" 11;
+  font-size: 104px !important;
+  line-height: 1;
+}
+
+.sub-hero-text {
+  background: linear-gradient(90deg, #d9d9d9 0%, #989898 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* .sub-hero-text::before {
+  background: linear-gradient(270deg, #d9d9d9 0%, #989898 100%);
+  content: " ";
+  height: 2px;
+  width: 26lvw;
+  display: block;
+  position: absolute;
+  top: 52.2%;
+  left: 0px;
+}
+
+.sub-hero-text::after {
+  background: linear-gradient(270deg, #d9d9d9 0%, #989898 100%);
+  content: " ";
+  height: 2px;
+  width: 26lvw;
+  display: block;
+  position: absolute;
+  top: 52.2%;
+  right: 0px;
+} */
+
+.grad-text {
+  background: linear-gradient(
+    277.68deg,
+    #ff00a8 6.67%,
+    #9b88ff 51.14%,
+    #00f0ff 95.61%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  width: max-content !important;
+}
+
+.fade-bg-bottom {
+  background-image: linear-gradient(
+    to bottom,
+    transparent 85%,
+    #080808 100%
+  ) !important;
 }
 
 .element-hidden {

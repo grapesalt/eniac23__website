@@ -1,19 +1,22 @@
 import { NavLink } from "@remix-run/react";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
-const NavItem = ({ name, to, selected }) => {
+const NavItem = ({ text, href, canBeActive }) => {
+  canBeActive = canBeActive ?? true;
   return (
-    <>
-      <NavLink to={to} prefetch="intent" className={"w-full l-nav-item"}>
-        <div
-          className={`h-full flex nav-item px-auto rounded-full hover:cursor-pointer transition-all ${
-            selected && `border-[#b9b9b9]`
-          }`}
-        >
-          <p className="ntext text-[20px] font-light my-auto mx-auto">{name}</p>
-        </div>
-      </NavLink>
-    </>
+    <NavLink
+      to={href}
+      prefetch="intent"
+      // className={`  ${({ isActive }) =>
+      //   isActive && `text-white`}`}
+      className={({ isActive }) => {
+        return canBeActive && isActive
+          ? `ml-6 text-white nav-item-shadow text-sm`
+          : `ml-6 text-[#d9d9d9] text-sm hover:text-white transition-all duration-300`;
+      }}
+    >
+      {text}
+    </NavLink>
   );
 };
 
