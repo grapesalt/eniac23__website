@@ -4,7 +4,7 @@ import { Link } from "@remix-run/react";
 
 const DesktopNav = () => {
   return (
-    <nav className=" shadow-inner shadow-white items-center hidden md:flex justify-between fixed top-[3svh] w-[92lvw] max-w-[918px] rounded-full mx-auto right-[5lvw] left-[5lvw] desktop-navbar px-6 h-[56px]">
+    <nav className=" shadow-inner shadow-white items-center hidden md:flex justify-between fixed top-[3svh] w-[92lvw] max-w-[918px] rounded-full mx-auto right-[5lvw] left-[5lvw] navbar px-6 h-[56px]">
       <h1 className="text-2xl gugi">ENIAC</h1>
       <div className="flex justify-between items-center">
         <NavItem text={"Home"} href={"/"} />

@@ -17,7 +17,7 @@ body {
   font-family: "IBM Plex Serif", serif;
 }
 
-.desktop-navbar {
+.navbar {
   background: linear-gradient(
     135deg,
     rgba(206, 206, 206, 0.126) 10%,
@@ -32,11 +32,19 @@ body {
 }
 
 .hero-text {
-  font-family: "Bodoni Moda", serif;
-  font-weight: 515;
-  font-variation-settings: "opsz" 11;
-  font-size: 104px !important;
+  background: linear-gradient(315deg, #f9c6ff 10%, #c8f1ff 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 500;
   line-height: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-text {
+    font-weight: 400;
+  }
 }
 
 .sub-hero-text {
@@ -87,6 +95,16 @@ body {
     transparent 85%,
     #080808 100%
   ) !important;
+}
+
+@media screen and (max-width: 768px) {
+  .fade-bg-bottom {
+    background-image: linear-gradient(
+      to bottom,
+      transparent 40%,
+      #080808 100%
+    ) !important;
+  }
 }
 
 .element-hidden {
