@@ -4,7 +4,12 @@ import React from "react";
 const MobNavItem = ({ to, text, close }) => {
   return (
     <>
-      <Link to={to} prefetch="intent" className="text-2xl" onClick={close}>
+      <Link
+        to={to}
+        prefetch="intent"
+        className="text-xl text-center"
+        onClick={close}
+      >
         {text}
       </Link>
     </>

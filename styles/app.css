@@ -43,7 +43,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .hero-text {
-    font-weight: 400;
+    font-weight: 300;
   }
 }
 
@@ -101,9 +101,13 @@ body {
   .fade-bg-bottom {
     background-image: linear-gradient(
       to bottom,
-      transparent 40%,
-      #080808 100%
+      transparent 75%,
+      #080808 90%
     ) !important;
+  }
+
+  .vr-bg {
+    opacity: 0.8;
   }
 }
 
