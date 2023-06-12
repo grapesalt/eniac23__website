@@ -2,6 +2,7 @@ import Images from "./homePage__heroImagesFixed";
 import Headings from "./homePage__mainText";
 import dottedPattern from "../../../images/dotted-pattern.svg";
 import vr from "../../../images/vr.svg";
+import ActionButton from "../../buttons/actionButton";
 
 export default function HomeHero() {
   return (
@@ -26,12 +27,20 @@ export default function HomeHero() {
               VIRUS 2023
             </h1>
             <div className="inline-block">
-              <h2 className="sub-hero-text text-[20px] md:text-[45px] ">
-                New Realities: Metaverse
+              <h2 className="sub-hero-text text-[14px] md:text-[36px] ">
+                New Realities : Breaking Boundaries
               </h2>
-              <p className="text-right uppercase text-sm md:text-md tracking-widest md:tracking-[0.2em] grad-text ml-auto mt-[-5px] md:mt-[-10px]">
-                Breaking Boundaries
+              <p className="font-semibold text-right uppercase text-[12px] md:text-lg tracking-widest md:tracking-[0.2em] grad-text ml-auto mt-[-5px] md:mt-[-10px]">
+                to metaverse
               </p>
+            </div>
+            <div className="z-50">
+              <ActionButton
+                text={"enter now"}
+                className={
+                  "w-[160px] mx-auto absolute hero-button z-50 md:py-[9px] text-sm md:text-md mt-4"
+                }
+              />
             </div>
           </div>
         </div>

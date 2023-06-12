@@ -111,6 +111,25 @@ body {
   }
 }
 
+.action-button-bg {
+  box-shadow: inset 0px 0px 8px rgba(217, 217, 217, 0.62);
+  background: linear-gradient(
+    93.87deg,
+    #00e0ff 1.39%,
+    #7000ff 46.52%,
+    #ff6868 98.75%
+  );
+  border-radius: 318px;
+}
+
+.action-button-bg:hover {
+  box-shadow: inset 0px 0px 6px rgba(217, 217, 217, 0.859);
+}
+
+.hero-button {
+  right: calc(50lvw - 80px);
+}
+
 .element-hidden {
   display: none !important;
 }

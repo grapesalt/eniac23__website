@@ -1,6 +1,7 @@
 import React from "react";
 import NavItem from "./navItem";
 import { Link } from "@remix-run/react";
+import ActionButton from "../buttons/actionButton";
 
 const DesktopNav = () => {
   return (
@@ -13,6 +14,8 @@ const DesktopNav = () => {
         <NavItem text={"Sponsors"} href={"/"} canBeActive={false} />
         <NavItem text={"Events"} href={"/events"} />
         <NavItem text={"Reach Out"} href={"/"} canBeActive={false} />
+        <div className="ml-6"></div>
+        <ActionButton className={"hidden lg:flex"} />
       </div>
     </nav>
   );
