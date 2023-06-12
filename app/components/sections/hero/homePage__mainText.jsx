@@ -1,15 +1,29 @@
+import ActionButton from "../../buttons/actionButton";
+
 const Headings = () => {
   return (
     <>
-      <h1 className="text-5xl md:text-7xl text-center mb-3 font-light z-50">
-        VIRUS 2023
-      </h1>
-      <p className="text-secondary text-xl md:text-3xl hr-lines tracking-wider md:tracking-wide  ">
-        New Realities: Metaverse
-      </p>
-      <p className="text-secondary text-xs md:text-md text-right uppercase">
-        Breaking Boundaries
-      </p>
+      <div className="main-heading text-center mt-[40svh] w-[100%]">
+        <h1 className="hero-text text-[52px] sm:text-[75px] md:text-[100px]">
+          VIRUS 2023
+        </h1>
+        <div className="inline-block">
+          <h2 className="sub-hero-text text-[14px] md:text-[36px] ">
+            New Realities : Breaking Boundaries
+          </h2>
+          <p className="font-semibold text-right uppercase text-[12px] md:text-lg tracking-widest md:tracking-[0.2em] grad-text ml-auto mt-[-5px] md:mt-[-10px]">
+            to metaverse
+          </p>
+        </div>
+        <div className="z-50">
+          <ActionButton
+            text={"enter now"}
+            className={
+              "w-[160px] mx-auto hero-button z-50 md:py-[9px] text-sm md:text-md mt-2"
+            }
+          />
+        </div>
+      </div>
     </>
   );
 };

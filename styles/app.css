@@ -89,28 +89,6 @@ body {
   width: max-content !important;
 }
 
-.fade-bg-bottom {
-  background-image: linear-gradient(
-    to bottom,
-    transparent 85%,
-    #080808 100%
-  ) !important;
-}
-
-@media screen and (max-width: 768px) {
-  .fade-bg-bottom {
-    background-image: linear-gradient(
-      to bottom,
-      transparent 75%,
-      #080808 90%
-    ) !important;
-  }
-
-  .vr-bg {
-    opacity: 0.8;
-  }
-}
-
 .action-button-bg {
   box-shadow: inset 0px 0px 8px rgba(217, 217, 217, 0.62);
   background: linear-gradient(
@@ -128,6 +106,11 @@ body {
 
 .hero-button {
   right: calc(50lvw - 80px);
+}
+
+.sponsor-image-bg {
+  /* background: #6e6e6e; */
+  background-image: linear-gradient(135deg, #f8f8f822 0%, #f8f8f817 99.86%);
 }
 
 .element-hidden {

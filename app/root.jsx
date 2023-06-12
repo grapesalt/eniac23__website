@@ -1,5 +1,4 @@
 import {
-  Link,
   Links,
   LiveReload,
   Meta,
@@ -7,9 +6,9 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import stylesheet from "./styles/app.generated.css";
-import Navbar from "./components/navbar";
 import navStyles from "react-modern-drawer/dist/index.css";
+import Navbar from "./components/navbar";
+import stylesheet from "./styles/app.generated.css";
 
 export const links = () => [
   { rel: "stylesheet", href: stylesheet },
@@ -37,7 +36,7 @@ export default function App() {
       </head>
       <body>
         <Navbar />
-        <div className="flex flex-col md:h-[100svh] h-[calc(100svh-50px)]">
+        <div className="flex flex-col md:h-[100svh] h-[calc(100svh-50px)] overflow-auto">
           <Outlet />
         </div>
         <ScrollRestoration />

@@ -1,6 +1,6 @@
-import React, { Suspense, useEffect, useMemo, useRef, useState } from "react";
-import RightColumn from "../../components/sections/aboutUs/rightColumn";
+import React, { useEffect, useRef, useState } from "react";
 import LeftColumn from "../../components/sections/aboutUs/leftColumn";
+import RightColumn from "../../components/sections/aboutUs/rightColumn";
 // import useIsInViewport from "../../hooks/useIsInViewport";
 
 const AboutUs = () => {

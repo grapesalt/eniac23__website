@@ -10,3 +10,7 @@ node_modules
 
 # generated css
 /app/styles/app.generated.css
+
+# images
+/app/images/dotted-map.svg
+/app/images/lvr.svg

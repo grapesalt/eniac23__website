@@ -1,7 +1,6 @@
 import React from "react";
-import NavItem from "./navItem";
-import { Link } from "@remix-run/react";
 import ActionButton from "../buttons/actionButton";
+import NavItem from "./navItem";
 
 const DesktopNav = () => {
   return (
