@@ -113,6 +113,24 @@ body {
   background-image: linear-gradient(135deg, #f8f8f822 0%, #f8f8f817 99.86%);
 }
 
+.contact-info-item-bg {
+  background: linear-gradient(
+    90.19deg,
+    rgba(255, 255, 255, 0.156) 1.06%,
+    rgba(255, 255, 255, 0.126) 95.43%
+  );
+  border-radius: 49px;
+}
+
+.footer-bg {
+  background: linear-gradient(
+    178.59deg,
+    #080808 1.2%,
+    rgba(175, 63, 192, 0.23) 60.64%,
+    #080808 136%
+  );
+}
+
 .element-hidden {
   display: none !important;
 }

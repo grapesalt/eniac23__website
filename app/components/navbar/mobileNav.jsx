@@ -30,7 +30,7 @@ const MobileNav = () => {
           <MobNavItem close={toggleDrawer} to={"/contact"} text={"Reach Out"} />
         </div>
       </Drawer>
-      <nav className=" shadow-inner shadow-white items-center md:hidden justify-between fixed top-[3svh] w-[92lvw] max-w-[918px] rounded-full mx-auto right-[5lvw] left-[5lvw] navbar px-6 h-[56px] flex">
+      <nav className="z-[1000] shadow-inner shadow-white items-center md:hidden justify-between fixed top-[3svh] w-[92lvw] max-w-[918px] rounded-full mx-auto right-[5lvw] left-[5lvw] navbar px-6 h-[56px] flex">
         <h1 className="text-2xl gugi flex items-center my-auto">
           <Link to={"/"} prefetch="intent" className="mt-1">
             ENIAC

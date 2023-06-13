@@ -7,6 +7,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import navStyles from "react-modern-drawer/dist/index.css";
+import Footer from "./components/footer";
 import Navbar from "./components/navbar";
 import stylesheet from "./styles/app.generated.css";
 
@@ -36,8 +37,9 @@ export default function App() {
       </head>
       <body>
         <Navbar />
-        <div className="flex flex-col md:h-[100svh] h-[calc(100svh-50px)] overflow-auto">
+        <div className="flex flex-col md:h-[100svh] overflow-auto">
           <Outlet />
+          <Footer />
         </div>
         <ScrollRestoration />
         <Scripts />
