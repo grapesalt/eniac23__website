@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import Drawer from "react-modern-drawer";
 import MobNavItem from "./mobNavItem";
 
-const MobileNav = () => {
+const MobileNav = ({ scrollPosition }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState);
@@ -16,9 +16,9 @@ const MobileNav = () => {
         open={isOpen}
         onClose={toggleDrawer}
         direction="left"
-        className="md:hidden"
+        className="md:hidden z-[1000]"
       >
-        <div className="flex flex-col h-full bg-[#080808] pt-[15px] shadow-md shadow-[#6f6f6f]">
+        <div className="flex flex-col h-full bg-[#080808] pt-[15px] shadow-md shadow-[#6f6f6f] z-[1000]">
           <h1 className="text-4xl gugi mx-auto">ENIAC</h1>
           <div className="mt-4" />
           <MobNavItem close={toggleDrawer} to={"/"} text={"Home"} />
@@ -30,7 +30,13 @@ const MobileNav = () => {
           <MobNavItem close={toggleDrawer} to={"/contact"} text={"Reach Out"} />
         </div>
       </Drawer>
-      <nav className="z-[1000] shadow-inner shadow-white items-center md:hidden justify-between fixed top-[3svh] w-[92lvw] max-w-[918px] rounded-full mx-auto right-[5lvw] left-[5lvw] navbar px-6 h-[56px] flex">
+      <nav
+        className={`z-[100]  items-center md:hidden justify-between fixed shadow-white ${
+          scrollPosition > 0.6
+            ? `top-0  w-full h-[52px] nav-animation`
+            : `top-[3svh] w-[92lvw] rounded-full right-[5lvw] left-[5lvw] h-[56px] shadow-inner `
+        } max-w-[918px]  mx-auto navbar px-6  flex transition-all duration-300`}
+      >
         <h1 className="text-2xl gugi flex items-center my-auto">
           <Link to={"/"} prefetch="intent" className="mt-1">
             ENIAC

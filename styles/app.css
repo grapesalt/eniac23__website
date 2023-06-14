@@ -24,7 +24,7 @@ body {
     rgba(209, 209, 209, 0.102) 90%
   );
   opacity: 1;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(8px);
 }
 
 .nav-item-shadow {
@@ -129,6 +129,16 @@ body {
     rgba(175, 63, 192, 0.23) 60.64%,
     #080808 136%
   );
+}
+
+.nav-animation {
+  animation: mymove 5s;
+}
+
+@keyframes mymove {
+  50% {
+    border-radius: 0;
+  }
 }
 
 .element-hidden {
