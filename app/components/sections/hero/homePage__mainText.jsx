@@ -3,15 +3,15 @@ import ActionButton from "../../buttons/actionButton";
 const Headings = () => {
   return (
     <>
-      <div className="main-heading text-center mt-[40svh] w-[100%]">
+      <div className="main-heading text-center mt-[45svh] w-[100%]">
         <h1 className="hero-text text-[52px] sm:text-[75px] md:text-[100px]">
           VIRUS 2023
         </h1>
         <div className="inline-block">
-          <h2 className="sub-hero-text text-[14px] md:text-[36px] ">
+          <h2 className="sub-hero-text text-[14px] md:text-[36px]">
             New Realities : Breaking Boundaries
           </h2>
-          <p className="font-semibold text-right uppercase text-[12px] md:text-lg tracking-widest md:tracking-[0.2em] grad-text ml-auto mt-[-5px] md:mt-[-10px]">
+          <p className="font-semibold text-right uppercase text-[12px] md:text-2xl tracking-widest md:tracking-[0.1em] grad-text ml-auto mt-[-5px] md:mt-[-10px]">
             to metaverse
           </p>
         </div>

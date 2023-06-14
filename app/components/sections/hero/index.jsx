@@ -6,12 +6,12 @@ export default function HomeHero() {
   return (
     <>
       <div
-        className="min-h-[80svh]"
+        className="min-h-[80svh] md:min-h-[100svh]"
         style={{
           background: `url(${dottedPattern}), url(${vr})`,
-          backgroundSize: "contain, 100% 80%",
+          backgroundSize: "contain, 100% 70%",
           backgroundRepeat: "repeat, no-repeat",
-          backgroundPosition: "center center, 30% 100%",
+          backgroundPosition: "center center, 30% 50%",
         }}
       >
         <div className="max-w-[918px] mx-auto">

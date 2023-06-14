@@ -8,7 +8,7 @@ const Image = () => {
         src={unacademy}
         loading="lazy"
         alt="Unacademy"
-        className="aspect-square h-auto object-contain grayscale-[60%] md:opacity-50 hover:grayscale-0 md:hover:opacity-100 transition-all duration-300 ease-in-out mx-auto"
+        className="aspect-square h-auto object-cover mx-auto max-h-[68%] my-auto"
       />
     </div>
   );

@@ -6,6 +6,7 @@ const Navbar = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const handleScroll = () => {
     const percentageScroll = window.scrollY / window.innerHeight;
+    console.log(percentageScroll);
     setScrollPosition(percentageScroll);
   };
 
