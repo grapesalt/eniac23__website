@@ -1,5 +1,4 @@
 import React from "react";
-import { Tooltip } from "react-tooltip";
 
 const TeamMate = ({ memberName, post }) => {
   post = post || "Position";
@@ -9,16 +8,16 @@ const TeamMate = ({ memberName, post }) => {
       <div className="flex flex-col team-grid-border team-mate">
         <div className="team-mate-bg rounded-xl ">
           <img
-            src={`https://placehold.co/500x500/png?text=${memberName}&fontsize=36`}
+            src={`https://placehold.co/500x500/png?text=Placehold+Image&fontsize=36`}
             alt={memberName}
-            className=" rounded-xl aspect-[8/5] object-cover max-h-[180px] z-[100] hover:opacity-70 transition-all duration-300 ease-in-out"
+            className=" rounded-xl aspect-[8/5] object-cover max-h-[240px] z-[100] border team-mate-border transition-all duration-300 ease-in-out"
           />
         </div>
         <div className="flex flex-col items-center justify-center border rounded-full mt-2 bg-[#1a1a1a]">
           <p className="text-center text-sm my-1">{post}</p>
         </div>
       </div>
-      <Tooltip
+      {/* <Tooltip
         anchorSelect=".team-mate"
         closeOnScroll={true}
         style={{
@@ -27,7 +26,7 @@ const TeamMate = ({ memberName, post }) => {
         }}
       >
         {memberName}
-      </Tooltip>
+      </Tooltip> */}
     </>
   );
 };

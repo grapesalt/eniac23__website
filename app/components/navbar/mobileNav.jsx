@@ -1,35 +1,51 @@
 import { Link } from "@remix-run/react";
 import Hamburger from "hamburger-react";
-import React, { useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 // import component 👇
 import Drawer from "react-modern-drawer";
 import MobNavItem from "./mobNavItem";
+// let Drawer = lazy(() => import("react-modern-drawer"));
+
+const ClientOnly = ({ children }) => {
+  let [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+  return mounted ? <>{children}</> : null;
+};
 
 const MobileNav = ({ scrollPosition }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState);
   };
+
   return (
     <>
-      <Drawer
-        open={isOpen}
-        onClose={toggleDrawer}
-        direction="left"
-        className="md:hidden z-[1000]"
-      >
-        <div className="flex flex-col h-full bg-[#080808] pt-[15px] shadow-md shadow-[#6f6f6f] z-[1000]">
-          <h1 className="text-4xl gugi mx-auto">ENIAC</h1>
-          <div className="mt-4" />
-          <MobNavItem close={toggleDrawer} to={"/"} text={"Home"} />
-          <div className="mt-4" />
-          <MobNavItem close={toggleDrawer} to={"/about-us"} text={"About Us"} />
-          <div className="mt-4" />
-          <MobNavItem close={toggleDrawer} to={"/events"} text={"Events"} />
-          <div className="mt-4" />
-          <MobNavItem close={toggleDrawer} to={"/contact"} text={"Reach Out"} />
-        </div>
-      </Drawer>
+      <ClientOnly>
+        <Suspense fallback={"Loading"}>
+          <Drawer
+            open={isOpen}
+            onClose={toggleDrawer}
+            direction="left"
+            className="md:hidden z-[1000]"
+          >
+            <div className="flex flex-col h-full bg-[#080808] pt-[15px] shadow-md shadow-[#6f6f6f] z-[1000]">
+              <h1 className="text-4xl gugi mx-auto">ENIAC</h1>
+              <div className="mt-4" />
+              <MobNavItem close={toggleDrawer} to={"/"} text={"Home"} />
+              <div className="mt-4" />
+              <MobNavItem close={toggleDrawer} to={"/events"} text={"Events"} />
+              <div className="mt-4" />
+              <MobNavItem
+                close={toggleDrawer}
+                to={"/contact"}
+                text={"Reach Out"}
+              />
+            </div>
+          </Drawer>
+        </Suspense>
+      </ClientOnly>
       <nav
         className={`z-[100]  items-center md:hidden justify-between fixed shadow-white ${
           scrollPosition > 0.6

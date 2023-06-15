@@ -1,22 +1,14 @@
-import React, { useEffect, useState } from "react";
+import { useScrollPosition } from "@n8tb1t/use-scroll-position";
+import React, { useState } from "react";
 import DesktopNav from "./desktopNav";
 import MobileNav from "./mobileNav";
 
 const Navbar = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
-  const handleScroll = () => {
-    const percentageScroll = window.scrollY / window.innerHeight;
-    console.log(percentageScroll);
-    setScrollPosition(percentageScroll);
-  };
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [scrollPosition, handleScroll]);
+  useScrollPosition(({ prevPos, currPos }) => {
+    setScrollPosition(-1 * (currPos.y / window.innerHeight));
+  });
   return (
     <>
       <DesktopNav scrollPosition={scrollPosition} />

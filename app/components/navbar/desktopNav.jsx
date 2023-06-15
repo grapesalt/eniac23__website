@@ -1,18 +1,16 @@
-import React, { useEffect } from "react";
+import { Link } from "@remix-run/react";
+import React, { Suspense } from "react";
 import ActionButton from "../buttons/actionButton";
 import NavItem from "./navItem";
 
-const DesktopNav = ({ scrollPosition }) => {
-  useEffect(() => {
-    console.log(scrollPosition);
-  }, [scrollPosition]);
+const DesktopNav = () => {
   return (
     <nav
-      className={` shadow-inner shadow-white items-center hidden md:flex justify-between fixed ${
-        scrollPosition > 0.6 ? `top-0` : `top-[3svh]`
-      } w-[92lvw] max-w-[918px] rounded-full mx-auto right-[5lvw] left-[5lvw] navbar px-6 h-[56px] z-[1000] `}
+      className={`items-center hidden md:flex justify-between fixed w-full mx-auto navbar px-6 h-[56px] z-[1000] top-0 `}
     >
-      <h1 className="text-2xl gugi">ENIAC</h1>
+      <Link to={"/"}>
+        <h1 className="text-2xl gugi">ENIAC</h1>
+      </Link>
       <div className="flex justify-between items-center">
         <NavItem text={"Home"} href={"/"} />
         <NavItem text={"About Us"} href={"/"} canBeActive={false} />
@@ -27,4 +25,8 @@ const DesktopNav = ({ scrollPosition }) => {
   );
 };
 
-export default DesktopNav;
+export default () => (
+  <Suspense fallback={"Loading"}>
+    <DesktopNav />
+  </Suspense>
+);
