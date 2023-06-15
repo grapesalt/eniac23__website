@@ -17,7 +17,7 @@ const DesktopNav = () => {
         <NavItem text={"Team"} href={"/"} canBeActive={false} />
         <NavItem text={"Sponsors"} href={"/"} canBeActive={false} />
         <NavItem text={"Events"} href={"/events"} />
-        <NavItem text={"Reach Out"} href={"/"} canBeActive={false} />
+        <NavItem text={"Reach Out"} href={"/contact"} canBeActive={true} />
         <div className="ml-6"></div>
         <ActionButton className={"hidden lg:flex"} />
       </div>

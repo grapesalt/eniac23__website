@@ -22,7 +22,7 @@ const Footer = () => {
               icon={<IoMail />}
             />
           </div>
-          {cl.pathname === "/" && (
+          {(cl.pathname === "/" || cl.pathname === "/contact") && (
             <div className="flex mt-5 mx-5 rounded-lg">
               <iframe
                 className="w-[calc(100lvw-40px)] md:w-[550px] min-h-[250px] rounded-lg mx-auto"
@@ -31,7 +31,11 @@ const Footer = () => {
               ></iframe>
             </div>
           )}
-          <p className="text-center text-sm drop-shadow-lg mt-2">
+          <p
+            className={`text-center text-sm drop-shadow-lg mt-2 ${
+              cl.pathname === "/contact" && `fixed bottom-10 self-center`
+            }`}
+          >
             &#169; ENIAC CLUB
           </p>
         </div>
