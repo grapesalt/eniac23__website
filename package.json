@@ -24,8 +24,10 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.9.0",
     "react-modern-drawer": "^1.2.0",
+    "react-spinners": "^0.13.8",
     "react-tooltip": "^5.14.0",
-    "remix-utils": "^6.3.0"
+    "remix-utils": "^6.3.0",
+    "tailwind-scrollbar-hide": "^1.1.7"
   },
   "devDependencies": {
     "@remix-run/dev": "^1.16.1",

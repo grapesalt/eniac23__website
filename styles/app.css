@@ -31,6 +31,16 @@ body {
   text-shadow: 1px 1px 10px #ffffff;
 }
 
+.top-margin {
+  margin-top: 56px;
+}
+
+@media screen and (max-width: 768px) {
+  .top-margin {
+    margin-top: calc(3svh + 56px);
+  }
+}
+
 .hero-text {
   background: linear-gradient(315deg, #f9c6ff 10%, #c8f1ff 90%);
   -webkit-background-clip: text;
@@ -53,28 +63,6 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-
-/* .sub-hero-text::before {
-  background: linear-gradient(270deg, #d9d9d9 0%, #989898 100%);
-  content: " ";
-  height: 2px;
-  width: 26lvw;
-  display: block;
-  position: absolute;
-  top: 52.2%;
-  left: 0px;
-}
-
-.sub-hero-text::after {
-  background: linear-gradient(270deg, #d9d9d9 0%, #989898 100%);
-  content: " ";
-  height: 2px;
-  width: 26lvw;
-  display: block;
-  position: absolute;
-  top: 52.2%;
-  right: 0px;
-} */
 
 .grad-text {
   background: linear-gradient(
@@ -161,13 +149,26 @@ body {
 }
 
 .nav-animation {
-  animation: mymove 5s;
+  animation: mymove 1s;
 }
 
 @keyframes mymove {
   50% {
     border-radius: 0;
   }
+}
+
+.eventselector__bg {
+  background: #1a1a1a;
+}
+
+.eventselector_event__bg {
+  backdrop-filter: blur(8px);
+  background: linear-gradient(
+    135deg,
+    rgba(206, 206, 206, 0.061) 10%,
+    rgba(209, 209, 209, 0.09) 90%
+  );
 }
 
 .element-hidden {

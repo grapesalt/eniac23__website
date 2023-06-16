@@ -1,4 +1,5 @@
 const { config } = require("@netlify/remix-edge-adapter");
+const { getDependenciesToBundle } = require("@remix-run/dev");
 const baseConfig =
   process.env.NODE_ENV === "production"
     ? config

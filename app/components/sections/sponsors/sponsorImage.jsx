@@ -3,7 +3,7 @@ import unacademy from "../../../images/sponsors/byjus.png";
 
 const Image = () => {
   return (
-    <div className="w-[140px] md:w-[140px] aspect-square border-2 border-[#49494912] rounded-full flex sponsor-image-bg mx-auto">
+    <div className="w-[140px] md:w-[140px] aspect-square  flex bg mx-auto">
       <img
         src={unacademy}
         loading="lazy"

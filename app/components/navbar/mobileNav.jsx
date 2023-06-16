@@ -47,10 +47,10 @@ const MobileNav = ({ scrollPosition }) => {
         </Suspense>
       </ClientOnly>
       <nav
-        className={`z-[100]  items-center md:hidden justify-between fixed shadow-white ${
+        className={`z-[100]  items-center md:hidden justify-between fixed shadow-white nav-animation ${
           scrollPosition > 0.6
-            ? `top-0  w-full h-[52px] nav-animation`
-            : `top-[3svh] w-[92lvw] rounded-full right-[5lvw] left-[5lvw] h-[56px] shadow-inner `
+            ? `top-0  w-full h-[52px] `
+            : `top-[3svh] w-[92lvw] rounded-full right-[0] left-[0] h-[56px] shadow-inner `
         } max-w-[918px]  mx-auto navbar px-6  flex transition-all duration-300`}
       >
         <h1 className="text-2xl gugi flex items-center my-auto">
