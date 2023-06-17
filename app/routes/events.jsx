@@ -10,7 +10,9 @@ const Events = () => {
         <Suspense children={<EventsSelector />} />
 
         <div className="mt-[calc(3svh+112px)] md:mt-[112px]"></div>
-        <Outlet />
+        <div className="w-[92lvw] md:w-full mx-auto max-w-[918px] ">
+          <Outlet />
+        </div>
       </div>
     </>
   );

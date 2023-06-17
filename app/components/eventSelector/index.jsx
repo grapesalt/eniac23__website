@@ -19,7 +19,7 @@ const EventsSelector = () => {
 
   return (
     <>
-      <div className="flex eventselector__bg w-[92lvw] md:w-[80lvw] lg:w-[70lvw] rounded-full md:rounded-xl border border-[#282727] mt-2 mx-auto fixed px-5 left-0 right-0 top-[calc(3svh+56px)] md:top-[56px]">
+      <div className="flex eventselector__bg w-[92lvw] md:w-[86lvw] md:max-w-[918px] rounded-full md:rounded-xl border border-[#282727] mt-2 mx-auto fixed px-2 md:px-5 left-0 right-0 top-[calc(3svh+56px)] md:top-[56px]">
         <NavigationButton
           clickEvent={() => scroll("left")}
           text={<MdKeyboardArrowLeft size={24} />}

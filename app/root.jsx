@@ -38,7 +38,7 @@ export default function App() {
       </head>
       <body>
         <Navbar />
-        <div className="flex flex-col md:h-[100svh] overflow-auto">
+        <div className="flex flex-col h-[100svh] overflow-auto">
           <Outlet />
           <Footer />
         </div>

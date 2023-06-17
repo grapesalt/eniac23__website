@@ -176,13 +176,18 @@ body {
   background: #1a1a1a;
 }
 
-.eventselector_event__bg {
+.eventselector-event__bg {
   backdrop-filter: blur(8px);
   background: linear-gradient(
     135deg,
-    rgba(206, 206, 206, 0.061) 10%,
-    rgba(209, 209, 209, 0.09) 90%
+    rgba(206, 206, 206, 0.164) -30%,
+    rgba(209, 209, 209, 0.099) 120%
   );
+}
+
+.eventselector-event__bg:hover {
+  background-position: 140px 100px;
+  transition: 0.5s all ease-in-out;
 }
 
 .element-hidden {

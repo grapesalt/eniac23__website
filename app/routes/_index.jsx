@@ -24,7 +24,7 @@ export default function Index() {
         tagline={"get to know us"}
         heading={"About Us"}
         children={<AboutUs />}
-        className={`min-h-[calc(100svh-52px)] md:min-h-[calc(100svh))]`}
+        // className={`min-h-[calc(100svh-52px)] md:min-h-[calc(100svh))]`}
       />
       <SecondarySection
         tagline={"the people behind the scenes"}

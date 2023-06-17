@@ -1,15 +1,20 @@
-import { Link } from "@remix-run/react";
+import { NavLink } from "@remix-run/react";
 import React from "react";
 
 const Event = ({ title, href, passedRef }) => {
   return (
-    <Link
+    <NavLink
       to={href}
+      end
       ref={passedRef}
-      className="px-2 py-1 rounded-full eventselector_event__bg text-center min-w-[140px] mr-1 uppercase text-sm "
+      className={({ isActive }) =>
+        isActive
+          ? "px-2 py-1 rounded-lg text-center min-w-[120px] mr-2 text-sm text-[#080808] bg-[#ffffff] transition-all duration-300"
+          : "px-2 py-1 rounded-lg eventselector-event__bg text-center min-w-[120px] mr-2 text-sm transition-all duration-300"
+      }
     >
       {title}
-    </Link>
+    </NavLink>
   );
 };
 
