@@ -8,7 +8,9 @@ import {
   useCatch,
 } from "@remix-run/react";
 import navStyles from "react-modern-drawer/dist/index.css";
-import Footer from "./components/footer";
+// import Footer from "./components/footer";
+// import Navbar from "./components/navbar";
+import { Suspense, lazy } from "react";
 import Navbar from "./components/navbar";
 import stylesheet from "./styles/app.generated.css";
 
@@ -16,6 +18,9 @@ export const links = () => [
   { rel: "stylesheet", href: stylesheet },
   { rel: "stylesheet", href: navStyles },
 ];
+
+// lazy load footer
+const Footer = lazy(() => import("./components/footer"));
 
 export default function App() {
   return (
@@ -40,7 +45,9 @@ export default function App() {
         <Navbar />
         <div className="flex flex-col h-[100svh] overflow-auto">
           <Outlet />
-          <Footer />
+          <Suspense fallback={"Loading"}>
+            <Footer />
+          </Suspense>
         </div>
         <ScrollRestoration />
         <Scripts />
