@@ -9,8 +9,8 @@
     "predev": "rimraf ./.netlify/edge-functions/",
     "start": "netlify serve",
     "typecheck": "tsc -b",
-    "deploy": "npm run build && netlify deploy",
-    "deploy:prod": "npm run build && netlify deploy --prod"
+    "deploy": "netlify build && netlify deploy",
+    "deploy:prod": "netlify build && netlify deploy --prod"
   },
   "dependencies": {
     "@n8tb1t/use-scroll-position": "^2.0.3",
