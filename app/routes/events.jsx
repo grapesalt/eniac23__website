@@ -1,5 +1,5 @@
 import { Outlet } from "@remix-run/react";
-import React from "react";
+import React, { Suspense } from "react";
 import EventsSelector from "../components/eventSelector";
 
 const Events = () => {
@@ -7,7 +7,8 @@ const Events = () => {
     <>
       <div className="h-full">
         <div className="top-margin"></div>
-        <EventsSelector />
+        <Suspense children={<EventsSelector />} />
+
         <div className="mt-[calc(3svh+112px)] md:mt-[112px]"></div>
         <Outlet />
       </div>

@@ -5,6 +5,7 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useCatch,
 } from "@remix-run/react";
 import navStyles from "react-modern-drawer/dist/index.css";
 import Footer from "./components/footer";
@@ -44,6 +45,24 @@ export default function App() {
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+      </body>
+    </html>
+  );
+}
+export function CatchBoundary() {
+  const caught = useCatch();
+  return (
+    <html>
+      <head>
+        <title>Oops!</title>
+        <Meta />
+        <Links />
+      </head>
+      <body>
+        <h1 className="text-center">
+          {caught.status} {caught.statusText}
+        </h1>
+        <Scripts />
       </body>
     </html>
   );
