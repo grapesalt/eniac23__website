@@ -1,21 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 
 const TeamMate = ({ memberName, post }) => {
   post = post || "Position";
   memberName = memberName || "Member Name";
+
+  const [isHovered, setIsHovered] = useState(false);
+  const handleMouseOver = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseOut = () => {
+    setIsHovered(false);
+  };
   return (
     <>
-      <div className="flex flex-col team-grid-border team-mate">
-        <div className="team-mate-bg rounded-xl ">
+      <div className="flex flex-col team-grid-border team-mate w-full p-auto">
+        <div
+          className="team-mate-bg rounded-3xl max-h-[170px] max-w-[170px] mx-auto"
+          onMouseOver={handleMouseOver}
+          onMouseOut={handleMouseOut}
+        >
           <img
             src={`https://placehold.co/500x500/png?text=Placehold+Image&fontsize=36`}
             alt={memberName}
-            className=" rounded-xl aspect-[8/5] object-cover max-h-[240px] z-[100] border team-mate-border transition-all duration-300 ease-in-out"
+            className="rounded-3xl aspect-[1/1] object-cover max-h-[165px] z-[100] transition-all duration-300 ease-in-out"
           />
         </div>
-        <div className="flex flex-col items-center justify-center border rounded-full mt-2 bg-[#1a1a1a]">
-          <p className="text-center text-sm my-1">{post}</p>
-        </div>
+
+        <p className="text-center text-sm my-1 transition-all">
+          {isHovered ? memberName : post}
+        </p>
       </div>
       {/* <Tooltip
         anchorSelect=".team-mate"

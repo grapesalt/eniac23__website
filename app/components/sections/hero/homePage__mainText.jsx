@@ -9,7 +9,7 @@ const Headings = () => {
         </h1>
         <div className="inline-block">
           <h2 className="sub-hero-text text-[14px] md:text-[36px]">
-            New Realities : Breaking Boundaries
+            New Realities: Breaking Boundaries
           </h2>
           <p className="font-semibold text-right uppercase text-[12px] md:text-2xl tracking-widest md:tracking-[0.1em] grad-text ml-auto mt-[-5px] md:mt-[-10px]">
             to metaverse

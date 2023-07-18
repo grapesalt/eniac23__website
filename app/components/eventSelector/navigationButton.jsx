@@ -5,7 +5,7 @@ const NavigationButton = ({ text, clickEvent }) => {
     <>
       <div
         onClick={clickEvent}
-        className="h-full eventselector__nav my-auto hover:cursor-pointer rounded-full hover:bg-[#ffffff17] transition-all duration-200 md:mx-1"
+        className="hidden md:flex h-full eventselector__nav my-auto hover:cursor-pointer rounded-full hover:bg-[#ffffff17] transition-all duration-200 md:mx-1"
       >
         <p className="my-auto self-center h-full">{text}</p>
       </div>
