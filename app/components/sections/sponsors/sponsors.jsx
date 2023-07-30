@@ -1,18 +1,19 @@
 import React from "react";
+import SponsorItem from "./sponsorItem";
 
 const Sponsors = () => {
   return (
-    // <div className="grid md:mt-10 grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-y-5 md:gap-y-10 overflow-auto">
-    //   <Image />
-    //   <Image />
-    //   <Image />
-    //   <Image />
-    //   <Image />
-    //   <Image />
-
-    // </div>
-
-    <>Will do after getting content</>
+    <>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-y-3 sm:gap-y-6 lg:grid-cols-6 mt-6 sm:mt-8">
+        <SponsorItem />
+        <SponsorItem />
+        <SponsorItem />
+        <SponsorItem />
+        <SponsorItem />
+        <SponsorItem />
+      </div>
+    </>
+    // <>Will do after getting content</>
   );
 };
 
