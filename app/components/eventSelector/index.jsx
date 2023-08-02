@@ -9,20 +9,23 @@ const EventsSelector = () => {
 
   const scroll = (dir) => {
     const clientWidth = ref.current.clientWidth;
+    ref.current.scrollBehaviour = "smooth";
     if (dir === "right") {
       ref.current.scrollLeft += clientWidth;
     } else {
       ref.current.scrollLeft -= clientWidth;
     }
-    ref.current.scrollBehaviour = "smooth";
   };
-
+  const hidden = () => {
+    return { hiddenClass: false };
+  };
   return (
     <>
       <div className="flex eventselector__bg w-[92lvw] md:w-[86lvw] md:max-w-[918px] rounded-full md:rounded-xl border border-[#282727] mt-2 mx-auto fixed px-2 md:px-5 left-0 right-0 top-[calc(3svh+56px)] md:top-[56px]">
         <NavigationButton
           clickEvent={() => scroll("left")}
           text={<MdKeyboardArrowLeft size={24} />}
+          hidden={hidden}
         />
         <div
           ref={ref}

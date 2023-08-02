@@ -38,7 +38,7 @@ const DesktopNav = () => {
                 onMouseEnter={pointerOnHome}
                 onMouseLeave={pointerFromHome}
               >
-                <div className=" bg-black/70 p-0 m-0">
+                <div className=" bg-black/70 p-1 m-0 rounded shadow-[#444444] shadow-inner">
                   <NavItem
                     noMl={true}
                     canBeActive={false}

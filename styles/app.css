@@ -114,6 +114,18 @@ body {
   transition: all 0.15s ease-in-out;
 }
 
+.sponsor-item-bg {
+  background: linear-gradient(
+    220deg,
+    #00e0ff 1.39%,
+    #7000ff 46.52%,
+    #ff6868 98.75%
+  );
+  padding-right: 3px;
+  padding-bottom: 4px;
+  transition: all 0.15s ease-in-out;
+}
+
 .team-mate-bg:hover {
   /* box-shadow: inset 0px 0px 8px rgba(217, 217, 217, 0.62); */
   /* padding-right: 2.5px;

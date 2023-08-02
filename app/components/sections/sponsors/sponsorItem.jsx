@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
 const SponsorItem = ({ sponsorName }) => {
-  sponsorName = sponsorName || "Sponsor Name";
+  sponsorName = sponsorName || "Sponsor";
   return (
     <>
       <div className="flex flex-col team-grid-border team-mate w-full p-auto">
-        <div className="team-mate-bg rounded-full max-h-[120px] max-w-[120px] mx-auto">
+        <div className="sponsor-item-bg rounded-full max-h-[120px] max-w-[120px] mx-auto">
           <img
             src={`https://placehold.co/500x500/png?text=Sponsor&fontsize=36`}
             alt={sponsorName}
