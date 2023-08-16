@@ -7,22 +7,28 @@ import {
   ScrollRestoration,
   useCatch,
 } from "@remix-run/react";
-import navStyles from "react-modern-drawer/dist/index.css";
 // import Footer from "./components/footer";
 // import Navbar from "./components/navbar";
 import { Suspense, lazy } from "react";
 import Navbar from "./components/navbar";
-import stylesheet from "./styles/app.generated.css";
+import tailwindStyles from "./styles/app.generated.css";
+import scrollbarStyle from "./styles/scrollbar.css";
+import useWindowPosition from "./hooks/useWindowPosition";
+import stylesheet from "./styles/styles.css";
+import reactDrawerStyle from "react-modern-drawer/dist/index.css";
 
 export const links = () => [
   { rel: "stylesheet", href: stylesheet },
-  { rel: "stylesheet", href: navStyles },
+  { rel: "stylesheet", href: reactDrawerStyle },
+  { rel: "stylesheet", href: scrollbarStyle },
+  { rel: "stylesheet", href: tailwindStyles },
 ];
 
 // lazy load footer
 const Footer = lazy(() => import("./components/footer"));
 
 export default function App() {
+  const scrollPosition = useWindowPosition();
   return (
     <html lang="en">
       <head>
@@ -42,9 +48,9 @@ export default function App() {
         />
       </head>
       <body>
-        <Navbar />
+        <Navbar scrollPosition={scrollPosition} />
         <div className="flex flex-col h-[100svh] overflow-auto">
-          <Outlet />
+          <Outlet context={[scrollPosition]} />
           <Suspense fallback={"Loading"}>
             <Footer />
           </Suspense>

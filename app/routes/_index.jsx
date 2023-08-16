@@ -5,6 +5,7 @@
 //   ];
 // };
 
+import { useOutletContext } from "@remix-run/react";
 import AboutUs from "../components/sections/aboutUs/aboutUs";
 import HomeHero from "../components/sections/hero";
 import Sponsors from "../components/sections/sponsors/sponsors";

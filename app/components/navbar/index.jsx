@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import DesktopNav from "./desktopNav";
 import MobileNav from "./mobileNav";
 
-const Navbar = () => {
+const Navbar = ({ scrollPosition }) => {
+  useEffect(() => {
+    console.log(scrollPosition);
+  }, [scrollPosition]);
   return (
     <>
-      <DesktopNav scrollPosition={1} />
+      <DesktopNav scrollPosition={scrollPosition} />
       <MobileNav scrollPosition={1} />
     </>
   );

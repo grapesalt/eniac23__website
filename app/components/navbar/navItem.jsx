@@ -21,10 +21,10 @@ const NavItem = ({
         return canBeActive && isActive
           ? `${
               !noMl && `ml-6`
-            } text-white nav-item-shadow text-sm transition-all duration-300 flex items-center z-50`
+            } text-white nav-item-shadow text-[15px] transition-all duration-300 flex items-center z-50`
           : `${
               !noMl && `ml-6`
-            } text-[#d9d9d9] text-sm hover:text-white transition-all duration-300 flex items-center z-50`;
+            } text-[#d9d9d9] text-[15px] hover:text-white transition-all duration-300 flex items-center z-50`;
       }}
     >
       {text}

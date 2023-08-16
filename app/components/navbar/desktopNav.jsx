@@ -1,5 +1,5 @@
 import { Link } from "@remix-run/react";
-import React, { Suspense, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import ActionButton from "../buttons/actionButton";
 import NavItem from "./navItem";
 import { FaAngleDown } from "react-icons/fa";
@@ -15,11 +15,11 @@ const DesktopNav = () => {
   return (
     <>
       <nav
-        className={`items-center hidden md:flex fixed w-full mx-auto navbar px-6 h-[56px] z-[1000] top-0`}
+        className={`items-center hidden md:flex fixed w-full mx-auto navbar px-6 z-[1000] top-0 h-[60px]`}
       >
         <div className="flex w-full justify-between xl:max-w-[80lvw] mx-auto">
           <Link to={"/"}>
-            <h1 className="text-2xl gugi">ENIAC</h1>
+            <h1 className="text-3xl gugi">ENIAC</h1>
           </Link>
           <div className="flex justify-between items-center">
             <div className="flex flex-col">
