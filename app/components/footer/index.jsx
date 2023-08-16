@@ -76,7 +76,7 @@ const Footer = () => {
           )}
           <p
             className={`text-center text-sm drop-shadow-lg mt-2 mb-2 ${
-              path === "/contact" && `fixed bottom-10 self-center`
+              path === "/contact" && `relative bottom-0 self-center`
             }`}
           >
             &#169; ENIAC CLUB
