@@ -49,7 +49,7 @@ export default function App() {
       </head>
       <body>
         <Navbar scrollPosition={scrollPosition} />
-        <div className="flex flex-col h-[100svh] overflow-auto">
+        <div className="flex flex-col h-[100svh] overflow-auto scroll-smooth">
           <Outlet context={[scrollPosition]} />
           <Suspense fallback={"Loading"}>
             <Footer />

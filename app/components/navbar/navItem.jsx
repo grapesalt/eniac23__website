@@ -9,6 +9,7 @@ const NavItem = ({
   hovered,
   notHovered,
   noMl,
+  clickEvent,
 }) => {
   canBeActive = canBeActive ?? true;
   return (
@@ -17,6 +18,7 @@ const NavItem = ({
       prefetch="intent"
       onMouseEnter={hovered && hovered}
       onMouseLeave={notHovered && notHovered}
+      onClick={clickEvent && clickEvent}
       className={({ isActive }) => {
         return canBeActive && isActive
           ? `${

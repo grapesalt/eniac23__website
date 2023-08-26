@@ -20,17 +20,20 @@ export default function Index() {
         tagline={"see who is backing us"}
         heading={"Our Sponsors"}
         children={<Sponsors />}
+        id={"sponsors"}
       />
       <SecondarySection
         tagline={"get to know us"}
         heading={"About Us"}
         children={<AboutUs />}
+        id={"about"}
         // className={`min-h-[calc(100svh-52px)] md:min-h-[calc(100svh))]`}
       />
       <SecondarySection
         tagline={"the people behind the scenes"}
         heading={"Our Team"}
         children={<Team />}
+        id={"team"}
       />
     </>
   );

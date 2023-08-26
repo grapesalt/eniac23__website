@@ -1,12 +1,13 @@
 import React from "react";
 
-const SecondarySection = ({ tagline, heading, children, className }) => {
+const SecondarySection = ({ tagline, heading, children, className, id }) => {
   return (
     <>
       <div
-        className={`max-w-[918px] w-full flex flex-col mx-auto mt-8 ${
+        className={`max-w-[918px] w-full flex flex-col mx-auto mt-8 scroll-mt-20 ${
           className ? className : ``
         }`}
+        id={id && id}
       >
         <p className="mx-auto text-center uppercase text-xs sm:text-sm md:text-md tracking-wide grad-text z-50">
           {tagline}

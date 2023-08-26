@@ -12,6 +12,12 @@ const DesktopNav = () => {
   const pointerFromHome = () => {
     setIsHomeHovered(false);
   };
+  const scrollToId = (id) => {
+    document.getElementById(id).scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
   return (
     <>
       <nav
@@ -43,19 +49,22 @@ const DesktopNav = () => {
                     noMl={true}
                     canBeActive={false}
                     text={"Sponsors"}
-                    href={"/"}
+                    href={"/#sponsors"}
+                    // clickEvent={() => scrollToId("sponsors")}
                   />
                   <NavItem
                     noMl={true}
                     canBeActive={false}
                     text={"About"}
-                    href={"/"}
+                    href={"/#about"}
+                    // clickEvent={() => scrollToId("about")}
                   />
                   <NavItem
                     noMl={true}
                     canBeActive={false}
                     text={"Team"}
-                    href={"/"}
+                    href={"/#team"}
+                    // clickEvent={() => scrollToId("team")}
                   />
                 </div>
               </div>
