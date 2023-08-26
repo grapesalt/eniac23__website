@@ -57,7 +57,7 @@ const Footer = () => {
                 }}
                 className={`w-[calc(100lvw-40px)]  rounded-lg mx-auto ${
                   path === "/contact"
-                    ? `min-h-[300px] h-[50svh] mb-10 md:w-[650px] `
+                    ? `min-h-[200px] md:min-h-[300px] h-[50svh] md:mb-10 md:w-[650px] `
                     : `min-h-[250px] md:w-[550px]`
                 }`}
                 id="gmap_canvas"

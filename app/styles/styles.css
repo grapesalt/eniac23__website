@@ -21,6 +21,8 @@ body {
   );
   opacity: 1;
   backdrop-filter: blur(18px);
+  /* add support for other browsers */
+  -webkit-backdrop-filter: blur(18px);
 }
 
 .nav-item-shadow {
