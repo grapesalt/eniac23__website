@@ -4,14 +4,14 @@ const Headings = () => {
   return (
     <>
       <div className="main-heading text-center mt-[45svh] w-[100%]">
-        <h1 className="hero-text text-[52px] sm:text-[75px] md:text-[100px]">
+        <h1 className="hero-text text-[40px] sm:text-[78px] md:text-[100px] lg:text-[130px]">
           VIRUS 2023
         </h1>
-        <div className="inline-block">
-          <h2 className="sub-hero-text text-[14px] md:text-[36px]">
+        <div className="inline-block ">
+          <h2 className="sub-hero-text text-[14px] sm:text-[20px] md:text-[28px] lg:text-[36px]">
             New Realities: Breaking Boundaries
           </h2>
-          <p className="font-semibold text-right uppercase text-[12px] md:text-2xl tracking-widest md:tracking-[0.1em] grad-text ml-auto mt-[-5px] md:mt-[-10px]">
+          <p className="text-right uppercase md:capitalize text-[10px] font-semibold md:font-normal sm:text-[14px] md:text-[18px] lg:text-[25px] tracking-widest md:tracking-[0.1em] grad-text ml-auto mt-[-5px] md:mt-[-10px]">
             to metaverse
           </p>
         </div>
