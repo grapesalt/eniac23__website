@@ -3,8 +3,8 @@ import ActionButton from "../../buttons/actionButton";
 const Headings = () => {
   return (
     <>
-      <div className="main-heading text-center mt-[45svh] w-[100%]">
-        <h1 className="hero-text text-[40px] sm:text-[78px] md:text-[100px] lg:text-[130px]">
+      <div className="main-heading text-center mt-[39svh] sm:mt-[42svh] w-[100%]">
+        <h1 className="hero-text text-[48px] sm:text-[78px] md:text-[100px] lg:text-[130px]">
           VIRUS 2023
         </h1>
         <div className="inline-block ">
@@ -19,7 +19,7 @@ const Headings = () => {
           <ActionButton
             text={"enter now"}
             className={
-              "w-[160px] mx-auto hero-button z-50 md:py-[9px] text-sm md:text-md mt-2"
+              "w-[125px] sm:w-[160px] mx-auto hero-button z-50 py-[6px] md:py-[9px] text-xs md:text-md mt-2"
             }
           />
         </div>

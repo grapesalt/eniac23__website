@@ -42,14 +42,14 @@ body {
 }
 
 .hero__bg-config {
-  background-size: contain, 100% 77% !important;
+  background-size: contain, 100% 83% !important;
   background-repeat: repeat, no-repeat !important;
-  background-position: center center, 30% 90% !important;
+  background-position: center center, 30% 108% !important;
 }
 
 @media screen and (max-width: 768px) {
   .hero__bg-config {
-    background-size: contain, 100% !important;
+    background-size: contain, 120% !important;
     background-repeat: repeat, no-repeat !important;
     background-position: center center, 30% 100% !important;
   }

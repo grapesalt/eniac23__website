@@ -31,12 +31,12 @@ const MobileNav = ({ scrollPosition }) => {
             className="md:hidden z-[1000]"
           >
             <div className="flex flex-col h-full bg-[#080808] pt-[15px] shadow-md shadow-[#6f6f6f] z-[1000]">
-              <h1 className="text-4xl gugi mx-auto">ENIAC</h1>
-              <div className="mt-4" />
+              {/* <h1 className="text-4xl gugi mx-auto">ENIAC</h1> */}
+              {/* <div className="mt-4" /> */}
               <MobNavItem close={toggleDrawer} to={"/"} text={"Home"} />
-              <div className="mt-4" />
+              <div className="mt-[14px]" />
               <MobNavItem close={toggleDrawer} to={"/events"} text={"Events"} />
-              <div className="mt-4" />
+              <div className="mt-[14px]" />
               <MobNavItem
                 close={toggleDrawer}
                 to={"/contact"}
