@@ -7,7 +7,7 @@ export default function HomeHero() {
   return (
     <>
       <div
-        className="min-h-[70svh] md:min-h-[100svh] hero__bg-config"
+        className="min-h-[75svh] md:min-h-[100svh] hero__bg-config"
         style={{
           background: `url(${dottedPattern}), url(${vr})`,
         }}

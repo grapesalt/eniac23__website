@@ -5,6 +5,7 @@ import React, { Suspense, useEffect, useState } from "react";
 import Drawer from "react-modern-drawer";
 import MobNavItem from "./mobNavItem";
 // let Drawer = lazy(() => import("react-modern-drawer"));
+import logo from "../../images/logo.svg";
 
 const ClientOnly = ({ children }) => {
   let [mounted, setMounted] = useState(false);
@@ -32,7 +33,12 @@ const MobileNav = ({ scrollPosition }) => {
           >
             <div className="flex flex-col h-full bg-[#080808] pt-[15px] shadow-md shadow-[#6f6f6f] z-[1000]">
               {/* <h1 className="text-4xl gugi mx-auto">ENIAC</h1> */}
-              {/* <div className="mt-4" /> */}
+              <img
+                src={logo}
+                alt="ENIAC logo"
+                className="h-[40px] self-center"
+              />
+              <div className="mt-4" />
               <MobNavItem close={toggleDrawer} to={"/"} text={"Home"} />
               <div className="mt-[14px]" />
               <MobNavItem close={toggleDrawer} to={"/events"} text={"Events"} />
@@ -53,11 +59,16 @@ const MobileNav = ({ scrollPosition }) => {
             : `top-[3svh] w-[92lvw] rounded-full right-[0] left-[0] h-[56px] shadow-inner `
         } max-w-[918px]  mx-auto navbar px-6  flex transition-all duration-300`}
       >
-        <h1 className="text-2xl gugi flex items-center my-auto">
-          <Link to={"/"} prefetch="intent" className="mt-1">
-            ENIAC
-          </Link>
-        </h1>
+        <Link to={"/"} prefetch="intent" className="mt-1">
+          <div className="flex max-h-full ">
+            <img
+              src={logo}
+              alt="ENIAC logo"
+              className="max-h-[30px] self-center"
+            />
+            <h1 className="self-center ml-2 text-2xl font-thin">ENIAC</h1>
+          </div>
+        </Link>
         <div className="flex items-center">
           <div className="z-[1000] my-auto">
             <Hamburger size={24} onToggle={toggleDrawer} toggled={isOpen} />

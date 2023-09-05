@@ -3,6 +3,7 @@ import React, { Suspense, useEffect, useState } from "react";
 import ActionButton from "../buttons/actionButton";
 import NavItem from "./navItem";
 import { FaAngleDown } from "react-icons/fa";
+import logo from "../../images/logo.svg";
 
 const DesktopNav = () => {
   const [isHomeHovered, setIsHomeHovered] = useState(false);
@@ -25,7 +26,14 @@ const DesktopNav = () => {
       >
         <div className="flex w-full justify-between xl:max-w-[80lvw] mx-auto">
           <Link to={"/"}>
-            <h1 className="text-3xl gugi">ENIAC</h1>
+            <div className="flex max-h-full ">
+              <img
+                src={logo}
+                alt="ENIAC logo"
+                className="max-h-[36px] self-center"
+              />
+              <h1 className="self-center ml-2 text-3xl font-thin">ENIAC</h1>
+            </div>
           </Link>
           <div className="flex justify-between items-center">
             <div className="flex flex-col">
