@@ -3,9 +3,6 @@ import DesktopNav from "./desktopNav";
 import MobileNav from "./mobileNav";
 
 const Navbar = ({ scrollPosition }) => {
-  useEffect(() => {
-    console.log(scrollPosition);
-  }, [scrollPosition]);
   return (
     <>
       <DesktopNav scrollPosition={scrollPosition} />

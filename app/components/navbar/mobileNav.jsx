@@ -6,6 +6,7 @@ import Drawer from "react-modern-drawer";
 import MobNavItem from "./mobNavItem";
 // let Drawer = lazy(() => import("react-modern-drawer"));
 import logo from "../../images/logo.svg";
+import events from "../../data/events.json";
 
 const ClientOnly = ({ children }) => {
   let [mounted, setMounted] = useState(false);
@@ -41,7 +42,11 @@ const MobileNav = ({ scrollPosition }) => {
               <div className="mt-4" />
               <MobNavItem close={toggleDrawer} to={"/"} text={"Home"} />
               <div className="mt-[14px]" />
-              <MobNavItem close={toggleDrawer} to={"/events"} text={"Events"} />
+              <MobNavItem
+                close={toggleDrawer}
+                to={`/events/${events[0].permalink}`}
+                text={"Events"}
+              />
               <div className="mt-[14px]" />
               <MobNavItem
                 close={toggleDrawer}
@@ -59,7 +64,7 @@ const MobileNav = ({ scrollPosition }) => {
             : `top-[3svh] w-[92lvw] rounded-full right-[0] left-[0] h-[56px] shadow-inner `
         } max-w-[918px]  mx-auto navbar px-6  flex transition-all duration-300`}
       >
-        <Link to={"/"} prefetch="intent" className="mt-1">
+        <Link to={"/"} prefetch="intent">
           <div className="flex max-h-full ">
             <img
               src={logo}

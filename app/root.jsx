@@ -16,6 +16,7 @@ import scrollbarStyle from "./styles/scrollbar.css";
 import useWindowPosition from "./hooks/useWindowPosition";
 import stylesheet from "./styles/styles.css";
 import reactDrawerStyle from "react-modern-drawer/dist/index.css";
+import Footer from "./components/footer";
 
 export const links = () => [
   { rel: "stylesheet", href: stylesheet },
@@ -25,7 +26,7 @@ export const links = () => [
 ];
 
 // lazy load footer
-const Footer = lazy(() => import("./components/footer"));
+// const Footer = lazy(() => import("./components/footer"));
 
 export default function App() {
   const scrollPosition = useWindowPosition();
@@ -51,9 +52,9 @@ export default function App() {
         <Navbar scrollPosition={scrollPosition} />
         <div className="flex flex-col h-[100svh] overflow-auto scroll-smooth">
           <Outlet context={[scrollPosition]} />
-          <Suspense fallback={"Loading"}>
-            <Footer />
-          </Suspense>
+          {/* <Suspense fallback={"Loading"}> */}
+          <Footer />
+          {/* </Suspense> */}
         </div>
         <ScrollRestoration />
         <Scripts />

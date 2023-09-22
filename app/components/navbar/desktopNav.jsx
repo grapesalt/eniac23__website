@@ -4,6 +4,7 @@ import ActionButton from "../buttons/actionButton";
 import NavItem from "./navItem";
 import { FaAngleDown } from "react-icons/fa";
 import logo from "../../images/logo.svg";
+import events from "../../data/events.json";
 
 const DesktopNav = () => {
   const [isHomeHovered, setIsHomeHovered] = useState(false);
@@ -78,7 +79,7 @@ const DesktopNav = () => {
               </div>
             </div>
 
-            <NavItem text={"Events"} href={"/events"} />
+            <NavItem text={"Events"} href={`/events/${events[0].permalink}`} />
             <NavItem text={"Reach Out"} href={"/contact"} canBeActive={true} />
             <div className="ml-6"></div>
             <ActionButton className={"hidden lg:flex"} />
