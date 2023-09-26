@@ -52,13 +52,14 @@ export default function App() {
         <Navbar scrollPosition={scrollPosition} />
         <div className="flex flex-col h-[100svh] overflow-auto scroll-smooth">
           <Outlet context={[scrollPosition]} />
-          {/* <Suspense fallback={"Loading"}> */}
-          <Footer />
-          {/* </Suspense> */}
         </div>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+        <script>
+          let ed = document.querySelectorAll(".rsw-ce"); ed.contenteditable =
+          "false";
+        </script>
       </body>
     </html>
   );

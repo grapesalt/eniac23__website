@@ -5,14 +5,6 @@ import { IoMail } from "react-icons/io5";
 import { BarLoader } from "react-spinners";
 import ContactInfoItem from "./contactInfo";
 
-const ClientOnly = ({ children }) => {
-  let [mounted, setMounted] = useState(false);
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-  return mounted ? <>{children}</> : null;
-};
-
 const Footer = () => {
   const path = useLocation().pathname;
   const [prevPath, setPrevPath] = useState("");

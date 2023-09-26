@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Dishi",
+    "post": "President"
+  },
+  {
+    "name": "Indrajeet",
+    "post": "Vice President"
+  },
+  { "name": "Aditya C", "post": "Associate Vice President", "pl": "AdityaC" },
+  { "name": "Dherya", "post": "Associate Vice President" },
+  { "name": "Yashraj", "post": "Head of Digital Experience" },
+  { "name": "Ayush", "post": "Head of Digitial Media" },
+  { "name": "Arima", "post": "Creative Head" },
+  { "name": "Maulik", "post": "Marketing Head" },
+  { "name": "Parth", "post": "Tech Head" },
+  { "name": "Tanveer", "post": "Coding Head" },
+  { "name": "Tejas", "post": "Gaming Head" },
+  {
+    "name": "Rahil",
+    "post": "Gaming Head"
+  },
+  { "name": "Daiwik", "post": "Gaming Head" },
+  { "name": "Shreyas", "post": "Multimedia Head" },
+  { "name": "Angad", "post": "Multimedia Head" },
+  { "name": "Ujjal", "post": "Design Head" },
+  { "name": "Aditya M", "post": "Design Head", "pl": "AdityaM" }
+]

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const TeamMate = ({ memberName, post }) => {
+const TeamMate = ({ memberName, post, purl }) => {
   post = post || "Position";
   memberName = memberName || "Member Name";
 
@@ -21,9 +21,9 @@ const TeamMate = ({ memberName, post }) => {
           onMouseOut={handleMouseOut}
         >
           <img
-            src={`https://placehold.co/500x500/png?text=Placehold+Image&fontsize=36`}
+            src={purl}
             alt={memberName}
-            className="rounded-3xl aspect-[1/1] object-cover max-h-[165px] z-[100] transition-all duration-300 ease-in-out"
+            className="grayscale hover:grayscale-0 rounded-3xl border border-white aspect-[1/1] object-cover max-h-[165px] z-[100] transition-all duration-300 ease-in-out"
           />
         </div>
 

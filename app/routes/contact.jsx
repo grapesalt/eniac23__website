@@ -1,5 +1,7 @@
+import Footer from "../components/footer";
+
 const Contact = () => {
-  return null;
+  return <Footer />;
 };
 
 export default Contact;

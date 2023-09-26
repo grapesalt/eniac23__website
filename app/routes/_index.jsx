@@ -11,17 +11,18 @@ import HomeHero from "../components/sections/hero";
 import Sponsors from "../components/sections/sponsors/sponsors";
 import Team from "../components/sections/team/team";
 import SecondarySection from "../components/sections/templates/secondarySection";
+import Footer from "../components/footer";
 
 export default function Index() {
   return (
     <>
       <HomeHero />
-      <SecondarySection
+      {/* <SecondarySection
         tagline={"see who is backing us"}
         heading={"Our Sponsors"}
         children={<Sponsors />}
         id={"sponsors"}
-      />
+      /> */}
       <SecondarySection
         tagline={"get to know us"}
         heading={"About Us"}
@@ -35,6 +36,7 @@ export default function Index() {
         children={<Team />}
         id={"team"}
       />
+      <Footer />
     </>
   );
 }
