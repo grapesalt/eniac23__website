@@ -9,8 +9,8 @@ const Event = ({ title, href, passedRef }) => {
       ref={passedRef}
       className={({ isActive }) =>
         isActive
-          ? "px-2 py-1 rounded-lg text-center min-w-[120px] mr-2 text-sm text-[#080808] bg-[#ffffff] transition-all duration-300"
-          : "px-2 py-1 rounded-lg eventselector-event__bg text-center min-w-[120px] mr-2 text-sm transition-all duration-300"
+          ? "px-3 py-1 rounded-lg text-center whitespace-nowrap mr-2 text-sm text-[#080808] bg-[#ffffff] transition-all duration-300"
+          : "px-3 py-1 rounded-lg eventselector-event__bg text-center whitespace-nowrap mr-2 text-sm transition-all duration-300"
       }
     >
       {title}

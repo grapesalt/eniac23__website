@@ -28,7 +28,7 @@ const TeamMate = ({ memberName, post }) => {
         </div>
 
         <p className="text-center text-sm my-1 transition-all">
-          {isHovered ? memberName : post}
+          {!isHovered ? memberName : post}
         </p>
       </div>
       {/* <Tooltip

@@ -1,34 +1,34 @@
 [
   {
-    "title": "Memeiac",
-    "permalink": "memeiac"
-  },
-  {
-    "title": "Cinephoria",
-    "permalink": "cinephoria"
-  },
-  {
-    "title": "Crypt Hunt",
-    "permalink": "crypt-hunt"
-  },
-  {
-    "title": "Code Quest",
-    "permalink": "codequest"
+    "title": "Armageddon",
+    "permalink": "armageddon"
   },
   {
     "title": "Br(AI)nstorm",
     "permalink": "brainstorm"
   },
   {
-    "title": "Armageddon",
-    "permalink": "armageddon"
+    "title": "Cinephoria",
+    "permalink": "cinephoria"
+  },
+  {
+    "title": "Click Clash",
+    "permalink": "click-clash"
+  },
+  {
+    "title": "Code Quest",
+    "permalink": "codequest"
   },
   {
     "title": "Educraft",
     "permalink": "educraft"
   },
   {
-    "title": "Click Clash",
-    "permalink": "click-clash"
+    "title": "Meme o Mania",
+    "permalink": "meme-o-mania"
+  },
+  {
+    "title": "Surprise Event",
+    "permalink": "surprise"
   }
 ]
