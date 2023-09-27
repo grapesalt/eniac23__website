@@ -311,3 +311,7 @@ a.active.l-nav-item.ntext {
     display: none;
   }
 }
+
+.rsw-ce {
+  outline: none !important;
+}

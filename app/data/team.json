@@ -1,16 +1,19 @@
 [
+  { "name": "slot" },
   {
     "name": "Dishi",
     "post": "President"
   },
+  { "name": "slot" },
   {
     "name": "Indrajeet",
     "post": "Vice President"
   },
-  { "name": "Aditya C", "post": "Associate Vice President", "pl": "AdityaC" },
+  { "name": "slot" },
   { "name": "Dherya", "post": "Associate Vice President" },
-  { "name": "Yashraj", "post": "Head of Digital Experience" },
-  { "name": "Ayush", "post": "Head of Digitial Media" },
+  { "name": "Aditya C", "post": "Associate Vice President", "pl": "AdityaC" },
+  { "name": "Yashraj", "post": "Head of Digital Experiences" },
+  { "name": "Ayush", "post": "Head of Digital Media" },
   { "name": "Arima", "post": "Creative Head" },
   { "name": "Maulik", "post": "Marketing Head" },
   { "name": "Parth", "post": "Tech Head" },

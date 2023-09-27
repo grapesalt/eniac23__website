@@ -23,7 +23,8 @@ const TeamMate = ({ memberName, post, purl }) => {
           <img
             src={purl}
             alt={memberName}
-            className="grayscale hover:grayscale-0 rounded-3xl border border-white aspect-[1/1] object-cover max-h-[165px] z-[100] transition-all duration-300 ease-in-out"
+            loading="lazy"
+            className="grayscale-[20%] md:grayscale hover:grayscale-0 rounded-3xl border border-white aspect-[1/1] object-cover max-h-[165px] z-[100] transition-all duration-300 ease-in-out"
           />
         </div>
 
