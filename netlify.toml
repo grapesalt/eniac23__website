@@ -1,5 +1,5 @@
 [build]
-command = "remix build && cp _app_redirects public/_redirects"
+command = "tailwindcss -m -i ./styles/app.css -o app/styles/app.generated.css && remix build && cp _app_redirects public/_redirects"
 publish = "public"
 
 [dev]
