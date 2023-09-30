@@ -17,18 +17,16 @@ const MemePage = () => {
   const eventData = events.find((e) => e.permalink === params.event);
 
   const es = base64.decode(eventData.data);
+
   return (
     <div className="flex flex-col min-h-full md:mx-4 lg:mx-0">
       <div className="text-center md:text-left text-2xl md:text-3xl pt-2">
         {eventData.title}
       </div>
-      <EditorProvider>
-        <Editor value={es} contentEditable={false} />
-      </EditorProvider>
-      {/* <div
+      <div
         className="events-info"
-        dangerouslySetInnerHTML={{ __html: sei }}
-      ></div> */}
+        dangerouslySetInnerHTML={{ __html: es }}
+      ></div>
     </div>
   );
 };
