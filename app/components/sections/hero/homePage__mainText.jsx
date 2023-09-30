@@ -18,9 +18,11 @@ const Headings = () => {
         <div className="z-50">
           <ActionButton
             text={"enter now"}
+            link="/events/meme-o-matic"
             className={
               "w-[125px] sm:w-[160px] mx-auto hero-button z-50 py-[6px] md:py-[9px] text-xs md:text-md mt-2"
             }
+
           />
         </div>
       </div>

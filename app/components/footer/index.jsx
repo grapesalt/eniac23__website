@@ -30,14 +30,20 @@ const Footer = () => {
         <div className="flex flex-col content max-w-[768px] mt-10 mx-auto w-full">
           <div className="flex flex-col md:flex-row mx-6 md:mx-auto">
             <ContactInfoItem
-              text={"+91-987-654-3219"}
+              text={"+91-813-050-9881"}
               icon={<BsFillTelephoneFill />}
-              href={"tel:+91-987-654-3219"}
+              href={"tel:+91-813-050-9881"}
             />
             <div className="mt-5 md:mr-6"></div>
             <ContactInfoItem
-              text={"contactus.eniac23@gmail.com"}
-              href={"mailto:contactus.eniac23@gmail.com"}
+              text={"+91-817-852-5009"}
+              icon={<BsFillTelephoneFill />}
+              href={"tel:+91-817-852-5009"}
+            />
+            <div className="mt-5 md:mr-6"></div>
+            <ContactInfoItem
+              text={"contact.eniac23@gmail.com"}
+              href={"mailto:contact.eniac23@gmail.com"}
               icon={<IoMail />}
             />
           </div>

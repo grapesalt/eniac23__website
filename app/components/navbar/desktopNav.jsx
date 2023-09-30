@@ -37,52 +37,26 @@ const DesktopNav = () => {
             </div>
           </Link>
           <div className="flex justify-between items-center">
-            <div className="flex flex-col">
               <NavItem
                 text={"Home"}
-                icon={<FaAngleDown />}
                 href={"/"}
-                hovered={pointerOnHome}
-                notHovered={pointerFromHome}
-                noMl={true}
               />
-              <div
-                className={`flex flex-col ${
-                  !isHomeHovered && `hidden`
-                } absolute pt-7 z-10`}
-                onMouseEnter={pointerOnHome}
-                onMouseLeave={pointerFromHome}
-              >
-                <div className=" bg-black/70 p-1 m-0 rounded shadow-[#444444] shadow-inner">
-                  <NavItem
-                    noMl={true}
-                    canBeActive={false}
-                    text={"Sponsors"}
-                    href={"/#sponsors"}
-                    // clickEvent={() => scrollToId("sponsors")}
-                  />
-                  <NavItem
-                    noMl={true}
-                    canBeActive={false}
-                    text={"About"}
-                    href={"/#about"}
-                    // clickEvent={() => scrollToId("about")}
-                  />
-                  <NavItem
-                    noMl={true}
-                    canBeActive={false}
-                    text={"Team"}
-                    href={"/#team"}
-                    // clickEvent={() => scrollToId("team")}
-                  />
-                </div>
-              </div>
-            </div>
+              <NavItem
+                text={"About"}
+                href={"/#about"}
+                canBeActive={false}
+                // clickEvent={() => scrollToId("about")}
+              />
+              <NavItem
+                text={"Team"}
+                href={"/#team"}
+                canBeActive={false}
+                // clickEvent={() => scrollToId("team")}
+              />
 
             <NavItem text={"Events"} href={`/events/${events[0].permalink}`} />
-            <NavItem text={"Reach Out"} href={"/contact"} canBeActive={true} />
             <div className="ml-6"></div>
-            <ActionButton className={"hidden lg:flex"} />
+            <ActionButton text="contact us" className="hidden lg:flex" link="/#contact"/>
           </div>
         </div>
       </nav>

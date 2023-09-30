@@ -36,7 +36,9 @@ export default function Index() {
         children={<Team />}
         id={"team"}
       />
-      <Footer />
+      <main id="contact">
+        <Footer id={"contact"} />
+      </main>
     </>
   );
 }
