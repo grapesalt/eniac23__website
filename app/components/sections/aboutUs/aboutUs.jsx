@@ -25,15 +25,7 @@ const AboutUs = () => {
           ENIAC
         </h4>
         <p className="text-justify">
-          The ENIAC club organizes ‘VIRUS’, an eagerly anticipated event. The
-          Annual IT Fiesta is a momentous occasion that celebrates the forefront
-          of cutting-edge trends and advancements in the IT industry. It serves
-          as a hub for a diverse community, attracting students, professionals,
-          and technology enthusiasts from across the region. At Bluebells School
-          International, we take immense pride in nurturing talent and providing
-          opportunities for students to showcase their skills and knowledge. The
-          ‘VIRUS’ IT Fiesta is a testament to our commitment to empowering our
-          students and fostering their enthusiasm for technology.
+ENIAC, the esteemed computer Science club at Bluebells School International, operates as a student-driven initiative, guided by dedicated mentors who foster an environment of innovation and learning. ENIAC, originally denoting Electronic Numerical Integrator and Calculator, transcends its technical definition within our student community and symbolizes the essence of Encoding, Networking, Innovating, Achieving, and Computing epitomizing the profound passion embedded within our team.
         </p>
       </div>
     </div>
