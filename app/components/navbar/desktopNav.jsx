@@ -1,25 +1,11 @@
 import { Link } from "@remix-run/react";
-import React, { Suspense, useEffect, useState } from "react";
 import ActionButton from "../buttons/actionButton";
 import NavItem from "./navItem";
-import { FaAngleDown } from "react-icons/fa";
 import logo from "../../images/logo.svg";
+import { Suspense } from "react";
 import events from "../../data/events.json";
 
 const DesktopNav = () => {
-  const [isHomeHovered, setIsHomeHovered] = useState(false);
-  const pointerOnHome = () => {
-    setIsHomeHovered(true);
-  };
-  const pointerFromHome = () => {
-    setIsHomeHovered(false);
-  };
-  const scrollToId = (id) => {
-    document.getElementById(id).scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  };
   return (
     <>
       <nav
@@ -45,16 +31,14 @@ const DesktopNav = () => {
                 text={"About"}
                 href={"/#about"}
                 canBeActive={false}
-                // clickEvent={() => scrollToId("about")}
               />
               <NavItem
                 text={"Team"}
                 href={"/#team"}
                 canBeActive={false}
-                // clickEvent={() => scrollToId("team")}
               />
 
-            <NavItem text={"Events"} href={`/events/${events[0].permalink}`} />
+            <NavItem text={"Events"} canBeActive={false} href={"/#events"} />
             <div className="ml-6"></div>
             <ActionButton text="contact us" className="hidden lg:flex" link="/#contact"/>
           </div>

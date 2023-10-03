@@ -12,6 +12,7 @@ import Sponsors from "../components/sections/sponsors/sponsors";
 import Team from "../components/sections/team/team";
 import SecondarySection from "../components/sections/templates/secondarySection";
 import Footer from "../components/footer";
+import Events from "../components/sections/events/events";
 
 export default function Index() {
   return (
@@ -30,6 +31,9 @@ export default function Index() {
         id={"about"}
         // className={`min-h-[calc(100svh-52px)] md:min-h-[calc(100svh))]`}
       />
+
+      <SecondarySection tagline={"welcome to the show"} heading={"Events"} children={<Events />} id={"events"} />
+
       <SecondarySection
         tagline={"the people behind the scenes"}
         heading={"Our Team"}
