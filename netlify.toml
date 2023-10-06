@@ -16,4 +16,5 @@ for = "/build/*"
 [[redirects]]
   from = "/discord"
   to = "https://discord.gg/G6eZtFUf"
+  force = true
   status = 200
