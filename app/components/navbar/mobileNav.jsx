@@ -44,13 +44,13 @@ const MobileNav = ({ scrollPosition }) => {
               <div className="mt-[14px]" />
               <MobNavItem
                 close={toggleDrawer}
-                to={`/events/${events[0].permalink}`}
+                to={`/#events`}
                 text={"Events"}
               />
               <div className="mt-[14px]" />
               <MobNavItem
                 close={toggleDrawer}
-                to={"/contact"}
+                to={"/#contact"}
                 text={"Reach Out"}
               />
             </div>
