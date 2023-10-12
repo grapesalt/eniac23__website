@@ -34,12 +34,16 @@ export default function Index() {
 
       <SecondarySection tagline={"welcome to the show"} heading={"Events"} children={<Events />} id={"events"} />
 
+      <SecondarySection tagline={"brought to you by our"} heading={"Sponsors"} children={<Sponsors />} id={"sponsors"} />
+
       <SecondarySection
         tagline={"the people behind the scenes"}
         heading={"Our Team"}
         children={<Team />}
         id={"team"}
       />
+
+      <br></br>
       <main id="contact">
         <Footer id={"contact"} />
       </main>

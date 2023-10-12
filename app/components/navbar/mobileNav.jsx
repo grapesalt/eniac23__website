@@ -50,6 +50,18 @@ const MobileNav = ({ scrollPosition }) => {
               <div className="mt-[14px]" />
               <MobNavItem
                 close={toggleDrawer}
+                to={`/#sponsors`}
+                text={"Sponsors"}
+              />
+              <div className="mt-[14px]" />
+              <MobNavItem
+                close={toggleDrawer}
+                to={`/#team`}
+                text={"Our Team"}
+              />
+              <div className="mt-[14px]" />
+              <MobNavItem
+                close={toggleDrawer}
                 to={"/#contact"}
                 text={"Reach Out"}
               />

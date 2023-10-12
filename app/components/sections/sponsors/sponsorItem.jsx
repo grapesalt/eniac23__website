@@ -1,30 +1,18 @@
 import React, { useState } from "react";
 
-const SponsorItem = ({ sponsorName }) => {
+const SponsorItem = ({ sponsorName, img }) => {
   sponsorName = sponsorName || "Sponsor";
   return (
     <>
-      <div className="flex flex-col team-grid-border team-mate w-full p-auto">
-        <div className="sponsor-item-bg rounded-full max-h-[109px] max-w-[109px] md:max-h-[120px] md:max-w-[120px] mx-auto">
+      <div className="flex flex-col w-full p-auto">
+        <div className="mx-auto">
           <img
-            src={`https://placehold.co/500x500/png?text=Sponsor&fontsize=36`}
+            src={img}
             alt={sponsorName}
-            className="rounded-full aspect-[1/1] object-cover max-h-[105px] md:max-h-[115px] z-[100] transition-all duration-300 ease-in-out"
+            className="w-[90%] h-[90%] md:w-full md:h-full z-[100] transition-all duration-300 ease-in-out"
           />
         </div>
-
-        <p className="text-center text-sm my-1 transition-all">{sponsorName}</p>
       </div>
-      {/* <Tooltip
-        anchorSelect=".team-mate"
-        closeOnScroll={true}
-        style={{
-          backgroundColor: "#363636",
-          boxShadow: "2px 3px 1px 0px #888888",
-        }}
-      >
-        {memberName}
-      </Tooltip> */}
     </>
   );
 };
