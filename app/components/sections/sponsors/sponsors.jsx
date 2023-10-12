@@ -9,7 +9,7 @@ import festive from '../../../data/images/festive_sponsor_logo.png'
 const Sponsors = () => {
   return (
     <>
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-5 sm:gap-y-6 lg:grid-cols-4 mt-4  sm:mt-8">
+      <div className="grid items-center grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-5 sm:gap-y-6 lg:grid-cols-4 mt-4  sm:mt-8">
         <SponsorItem img={vmc} sponsorName={"Vidyamandir Classes"}/>
         <SponsorItem img={juana} sponsorName={"Juana"} />
         <SponsorItem img={creston} sponsorName={"Creston"} />
