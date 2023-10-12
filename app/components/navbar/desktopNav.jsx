@@ -23,24 +23,27 @@ const DesktopNav = () => {
             </div>
           </Link>
           <div className="flex justify-between items-center">
-              <NavItem
-                text={"Home"}
-                href={"/"}
-              />
-              <NavItem
-                text={"About"}
-                href={"/#about"}
-                canBeActive={false}
-              />
-              <NavItem
-                text={"Team"}
-                href={"/#team"}
-                canBeActive={false}
-              />
+            <NavItem
+              text={"Home"}
+              href={"/"}
+            />
+
+            <NavItem
+              text={"About"}
+              href={"/#about"}
+              canBeActive={false}
+            />
+
+            <NavItem text={"Events"} canBeActive={false} href={"/#events"} />
 
             <NavItem text={"Sponsors"} canBeActive={false} href={"/#sponsors"} />
 
-            <NavItem text={"Events"} canBeActive={false} href={"/#events"} />
+            <NavItem
+              text={"Team"}
+              href={"/#team"}
+              canBeActive={false}
+            />
+
             <div className="ml-6"></div>
             <ActionButton text="contact us" className="hidden lg:flex" link="/#contact"/>
           </div>
