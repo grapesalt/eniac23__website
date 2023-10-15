@@ -24,9 +24,10 @@ export default function Index() {
         children={<Sponsors />}
         id={"sponsors"}
       /> */}
-      <SecondarySection heading={"Results"} id={"results"}>
+      <SecondarySection tagline={"It's the final countdown"} heading={"Results"} id={"results"} className={"items-center"}>
+        <div className="mt-10"></div>
         <iframe
-          className="m-10 w-full aspect-video"
+          className="m-5 w-full aspect-video"
           src="https://bluebellsinternational-my.sharepoint.com/:p:/p/adityachaturvedi11872/EURVi_IV0lpFgP57j8BflU4BXJgSn-oThN8ZwZOEsjGpjQ?e=o5E6FV&amp;action=embedview&amp;wdAr=1.7777777777777777"
           frameborder="0"
         >
