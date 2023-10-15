@@ -24,6 +24,23 @@ export default function Index() {
         children={<Sponsors />}
         id={"sponsors"}
       /> */}
+      <SecondarySection heading={"Results"} id={"results"}>
+        <iframe
+          className="m-10 w-full aspect-video"
+          src="https://bluebellsinternational-my.sharepoint.com/:p:/p/adityachaturvedi11872/EURVi_IV0lpFgP57j8BflU4BXJgSn-oThN8ZwZOEsjGpjQ?e=o5E6FV&amp;action=embedview&amp;wdAr=1.7777777777777777"
+          frameborder="0"
+        >
+          This is an embedded{" "}
+          <a target="_blank" href="https://office.com">
+            Microsoft Office
+          </a>{" "}
+          presentation, powered by{" "}
+          <a target="_blank" href="https://office.com/webapps">
+            Office
+          </a>
+          .
+        </iframe>
+      </SecondarySection>
       <SecondarySection
         tagline={"get to know us"}
         heading={"About Us"}
@@ -32,9 +49,19 @@ export default function Index() {
         // className={`min-h-[calc(100svh-52px)] md:min-h-[calc(100svh))]`}
       />
 
-      <SecondarySection tagline={"welcome to the show"} heading={"Events"} children={<Events />} id={"events"} />
+      <SecondarySection
+        tagline={"welcome to the show"}
+        heading={"Events"}
+        children={<Events />}
+        id={"events"}
+      />
 
-      <SecondarySection tagline={"brought to you by our"} heading={"Sponsors"} children={<Sponsors />} id={"sponsors"} />
+      <SecondarySection
+        tagline={"brought to you by our"}
+        heading={"Sponsors"}
+        children={<Sponsors />}
+        id={"sponsors"}
+      />
 
       <SecondarySection
         tagline={"the people behind the scenes"}
